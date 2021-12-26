@@ -1,0 +1,6 @@
+2021-12-26 / 13:36:04	Enter in createTable method of DBOperation Class. Start Table Creation
+2021-12-26 / 13:36:04	Drop existing table
+2021-12-26 / 13:36:04	New Table Created Successfully. Exit from createTable method of DBOperation Class
+2021-12-26 / 13:43:24	Enter in createTable method of DBOperation Class. Start Table Creation
+2021-12-26 / 13:43:24	Drop existing table
+2021-12-26 / 13:43:24	New Table Created Successfully. Exit from createTable method of DBOperation Class

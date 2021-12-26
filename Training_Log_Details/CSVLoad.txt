@@ -1,0 +1,2 @@
+2021-12-26 / 13:30:34	Enter in InsertIntoCSV method of DBOperation Class. Start Data load into CSV file
+2021-12-26 / 13:30:34	Successfully data load into CSV file. Exit from InsertIntoCSV method of DBOperation Class.

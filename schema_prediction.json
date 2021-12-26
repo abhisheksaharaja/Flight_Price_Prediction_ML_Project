@@ -1,0 +1,17 @@
+{	"SampleFileName": "FlightPrice_08012020_120000.csv",
+	"LengthOfDateStampInFile": 8,
+	"LengthOfTimeStampInFile": 6,
+	"NumberofColumns" : 10,
+	"ColName": {
+		"Airline": "varchar2",
+		"Date_of_Journey": "varchar2",
+		"Source": "varchar2",
+		"Destination": "varchar2",
+		"Route": "varchar2",
+		"Dep_Time": "varchar2",
+		"Arrival_Time": "varchar2",
+		"Duration": "varchar2",
+		"Total_Stops": "varchar2",
+		"Additional_Info": "varchar2"
+	}
+}

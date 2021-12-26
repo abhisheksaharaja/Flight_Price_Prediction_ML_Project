@@ -1,0 +1,2 @@
+2021-12-26 / 13:30:34	Enter in MoveBadArchiveFolder method of Raw_Validation Class. Start Bad Data moving into Archive Folder
+2021-12-26 / 13:30:34	Bad Data move into Archive Folder

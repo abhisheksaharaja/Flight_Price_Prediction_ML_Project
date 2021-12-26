@@ -1,0 +1,9 @@
+2021-12-26 / 13:25:50	Start Database Connecting Process
+2021-12-26 / 13:25:50	Database Connected for createTable method
+2021-12-26 / 13:25:50	Database Connection Closed
+2021-12-26 / 13:25:50	Start Database Connecting Process
+2021-12-26 / 13:25:50	Database Connected for InsertIntoDB method
+2021-12-26 / 13:30:34	Database Connection Closed
+2021-12-26 / 13:30:34	Start Database Connecting Process
+2021-12-26 / 13:30:34	Database Connected for InsertIntoCSV method
+2021-12-26 / 13:30:34	Database Connection Closed.

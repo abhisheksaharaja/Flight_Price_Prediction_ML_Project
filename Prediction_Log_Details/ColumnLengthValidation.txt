@@ -1,0 +1,4 @@
+2021-12-26 / 13:36:04	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2021-12-26 / 13:36:04	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
+2021-12-26 / 13:43:23	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2021-12-26 / 13:43:23	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
