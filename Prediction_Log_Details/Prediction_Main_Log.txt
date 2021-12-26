@@ -30,3 +30,35 @@
 2021-12-26 / 13:44:22	Successfully load data from Table to CSV
 2021-12-26 / 13:44:22	Database Operation Ended
 2021-12-26 / 13:44:22	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
+2021-12-26 / 17:20:05	Start Raw Data Validation For Prediction Dataset
+2021-12-26 / 17:20:05	Raw Data Validation Completed
+2021-12-26 / 17:20:05	Start Data Transformation
+2021-12-26 / 17:20:05	Completed Data Transformation
+2021-12-26 / 17:20:05	Database Operation Started
+2021-12-26 / 17:20:05	Table Created
+2021-12-26 / 17:20:05	Data insertion into Table
+2021-12-26 / 17:21:31	Data Successfully insert into Table
+2021-12-26 / 17:21:31	Deleting Existing Good Data Folder
+2021-12-26 / 17:21:31	Successfully Deleted Existing Good Data Folder
+2021-12-26 / 17:21:31	Start moving Bad Data Folder into Bad Data Archive Folder
+2021-12-26 / 17:21:31	Successfully move Bad Data Folder into Bad Data Archive Folder
+2021-12-26 / 17:21:31	Start moving Data from Database Table to CSV
+2021-12-26 / 17:21:32	Successfully load data from Table to CSV
+2021-12-26 / 17:21:32	Database Operation Ended
+2021-12-26 / 17:21:32	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
+2021-12-26 / 17:21:56	Start Raw Data Validation For Prediction Dataset
+2021-12-26 / 17:21:56	Raw Data Validation Completed
+2021-12-26 / 17:21:56	Start Data Transformation
+2021-12-26 / 17:21:56	Completed Data Transformation
+2021-12-26 / 17:21:56	Database Operation Started
+2021-12-26 / 17:21:56	Table Created
+2021-12-26 / 17:21:56	Data insertion into Table
+2021-12-26 / 17:23:22	Data Successfully insert into Table
+2021-12-26 / 17:23:22	Deleting Existing Good Data Folder
+2021-12-26 / 17:23:22	Successfully Deleted Existing Good Data Folder
+2021-12-26 / 17:23:22	Start moving Bad Data Folder into Bad Data Archive Folder
+2021-12-26 / 17:23:22	Successfully move Bad Data Folder into Bad Data Archive Folder
+2021-12-26 / 17:23:22	Start moving Data from Database Table to CSV
+2021-12-26 / 17:23:22	Successfully load data from Table to CSV
+2021-12-26 / 17:23:22	Database Operation Ended
+2021-12-26 / 17:23:22	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
