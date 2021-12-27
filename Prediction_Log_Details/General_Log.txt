@@ -98,3 +98,53 @@
 2021-12-26 / 17:23:22	Complete moving file from Bad folder to Archive folder and bad data folder files also deleted. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
 2021-12-26 / 17:23:22	Enter in deletePredictFile method of Predict_Raw_Validation Class. Start Deleteing existing Predicted Output file
 2021-12-26 / 17:23:22	Deleted existing Predicted Output file. Exit from deletePredictFile method of Predict_Raw_Validation Class.
+2021-12-26 / 17:38:55	Enter in valueFromSchema method of Predict_Raw_Validation Class. Start getting Details from Schema
+2021-12-26 / 17:38:55	Successfully read schema details
+2021-12-26 / 17:38:55	Successfully Get Value from Schema. Exit from Enter into valueFromSchema method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in deleteExistingGoodDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Good Data Folder
+2021-12-26 / 17:38:55	Deleted Existing Good Data Folder. Exit from deleteExistingGoodDataFolder method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in deleteExistingBadDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Bad Data Folder
+2021-12-26 / 17:38:55	Deleted Existing Bad Data Folder. Exit from deleteExistingBadDataFolder method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in createGoodBadDataFolder method of Predict_Raw_Validation Class. Start Creating Good and Bad Data Folder
+2021-12-26 / 17:38:55	Created Good Data Folder
+2021-12-26 / 17:38:55	Created Bad Data Folder
+2021-12-26 / 17:38:55	Successfully Created Good and Bad Data Folder. Exit from createGoodBadDataFolder method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in fileNameValidation method of Predict_Raw_Validation Class. Start File name validation
+2021-12-26 / 17:38:55	File Name Validation Successfully Completed. Exit from fileNameValidation method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2021-12-26 / 17:38:55	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in missingWholeColumnValidation method of Predict_Raw_Validation Class. Start process to find any Column entirely contain missing value
+2021-12-26 / 17:38:55	Completed process to find any Column entirely contain missing value or not. Exit from missingWholeColumnValidation method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in Transformation method of Data_Transform Class. Start Data Transformation.
+2021-12-26 / 17:38:56	Complete Data Transformation. Exit from Transformation method of Data_Transform Class
+2021-12-26 / 17:40:21	Enter in deleteExistingGoodDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Good Data Folder
+2021-12-26 / 17:40:21	Deleted Existing Good Data Folder. Exit from deleteExistingGoodDataFolder method of Predict_Raw_Validation Class
+2021-12-26 / 17:40:21	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2021-12-26 / 17:40:21	Complete moving file from Bad folder to Archive folder and bad data folder files also deleted. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2021-12-26 / 17:40:21	Enter in deletePredictFile method of Predict_Raw_Validation Class. Start Deleteing existing Predicted Output file
+2021-12-26 / 17:40:21	Deleted existing Predicted Output file. Exit from deletePredictFile method of Predict_Raw_Validation Class.
+2021-12-27 / 11:52:39	Enter in valueFromSchema method of Predict_Raw_Validation Class. Start getting Details from Schema
+2021-12-27 / 11:52:39	Successfully read schema details
+2021-12-27 / 11:52:39	Successfully Get Value from Schema. Exit from Enter into valueFromSchema method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:39	Enter in deleteExistingGoodDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Good Data Folder
+2021-12-27 / 11:52:39	Deleted Existing Good Data Folder. Exit from deleteExistingGoodDataFolder method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:39	Enter in deleteExistingBadDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Bad Data Folder
+2021-12-27 / 11:52:39	Deleted Existing Bad Data Folder. Exit from deleteExistingBadDataFolder method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:39	Enter in createGoodBadDataFolder method of Predict_Raw_Validation Class. Start Creating Good and Bad Data Folder
+2021-12-27 / 11:52:39	Created Good Data Folder
+2021-12-27 / 11:52:39	Created Bad Data Folder
+2021-12-27 / 11:52:39	Successfully Created Good and Bad Data Folder. Exit from createGoodBadDataFolder method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:39	Enter in fileNameValidation method of Predict_Raw_Validation Class. Start File name validation
+2021-12-27 / 11:52:39	File Name Validation Successfully Completed. Exit from fileNameValidation method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:39	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2021-12-27 / 11:52:39	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:40	Enter in missingWholeColumnValidation method of Predict_Raw_Validation Class. Start process to find any Column entirely contain missing value
+2021-12-27 / 11:52:40	Completed process to find any Column entirely contain missing value or not. Exit from missingWholeColumnValidation method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:40	Enter in Transformation method of Data_Transform Class. Start Data Transformation.
+2021-12-27 / 11:52:40	Complete Data Transformation. Exit from Transformation method of Data_Transform Class
+2021-12-27 / 11:54:09	Enter in deleteExistingGoodDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Good Data Folder
+2021-12-27 / 11:54:09	Deleted Existing Good Data Folder. Exit from deleteExistingGoodDataFolder method of Predict_Raw_Validation Class
+2021-12-27 / 11:54:09	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2021-12-27 / 11:54:09	Complete moving file from Bad folder to Archive folder and bad data folder files also deleted. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2021-12-27 / 11:54:09	Enter in deletePredictFile method of Predict_Raw_Validation Class. Start Deleteing existing Predicted Output file
+2021-12-27 / 11:54:09	Deleted existing Predicted Output file. Exit from deletePredictFile method of Predict_Raw_Validation Class.

@@ -6,3 +6,7 @@
 2021-12-26 / 17:20:05	Complete finding entire Column contain missing value. Exit from missingWholeColumnValidation method of Predict_Raw_Validation Class
 2021-12-26 / 17:21:56	Enter in missingWholeColumnValidation method of Predict_Raw_Validation Class. Start finding entire Column contain missing value
 2021-12-26 / 17:21:56	Complete finding entire Column contain missing value. Exit from missingWholeColumnValidation method of Predict_Raw_Validation Class
+2021-12-26 / 17:38:55	Enter in missingWholeColumnValidation method of Predict_Raw_Validation Class. Start finding entire Column contain missing value
+2021-12-26 / 17:38:55	Complete finding entire Column contain missing value. Exit from missingWholeColumnValidation method of Predict_Raw_Validation Class
+2021-12-27 / 11:52:40	Enter in missingWholeColumnValidation method of Predict_Raw_Validation Class. Start finding entire Column contain missing value
+2021-12-27 / 11:52:40	Complete finding entire Column contain missing value. Exit from missingWholeColumnValidation method of Predict_Raw_Validation Class

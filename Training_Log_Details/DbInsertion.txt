@@ -2,3 +2,7 @@
 2021-12-26 / 13:27:48	FlightPrice_23012020_041211.csv File Loaded Successfully in Database
 2021-12-26 / 13:30:34	FlightPrice_23012020_041212.csv File Loaded Successfully in Database
 2021-12-26 / 13:30:34	File insertion in Database done.Exit from InsertIntoDB method of DBOperation Class
+2021-12-27 / 11:39:57	Enter in InsertIntoDB method of DBOperation Class. Start Data inserting into DataBase
+2021-12-27 / 11:41:54	FlightPrice_23012020_041211.csv File Loaded Successfully in Database
+2021-12-27 / 11:44:43	FlightPrice_23012020_041212.csv File Loaded Successfully in Database
+2021-12-27 / 11:44:43	File insertion in Database done.Exit from InsertIntoDB method of DBOperation Class

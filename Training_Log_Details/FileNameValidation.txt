@@ -5,3 +5,10 @@
 2021-12-26 / 13:25:49	Invalid File Name move into Bad Data Folder!!! FlightPrice_230120_04121.csv 
 2021-12-26 / 13:25:49	Invalid File Name move into Bad Data Folder!!! Flight_23012020_04121.csv 
 2021-12-26 / 13:25:49	File Name Validation Completed. Exit from FileNameValidation method of Raw_Validation Class
+2021-12-27 / 11:39:56	Enter in FileNameValidation method of Raw_Validation Class. File Name Validation Started
+2021-12-27 / 11:39:56	Invalid File Name move into Bad Data Folder!!! FlightPrice_23012020_04121.csv 
+2021-12-27 / 11:39:56	File Name validated move into Temporary Good Data Folder!!! FlightPrice_23012020_041211.csv 
+2021-12-27 / 11:39:56	File Name validated move into Temporary Good Data Folder!!! FlightPrice_23012020_041212.csv 
+2021-12-27 / 11:39:56	Invalid File Name move into Bad Data Folder!!! FlightPrice_230120_04121.csv 
+2021-12-27 / 11:39:56	Invalid File Name move into Bad Data Folder!!! Flight_23012020_04121.csv 
+2021-12-27 / 11:39:56	File Name Validation Completed. Exit from FileNameValidation method of Raw_Validation Class

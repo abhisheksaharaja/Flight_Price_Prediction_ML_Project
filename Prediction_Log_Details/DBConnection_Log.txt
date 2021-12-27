@@ -34,3 +34,21 @@
 2021-12-26 / 17:23:22	Start Database Connectivity.
 2021-12-26 / 17:23:22	Database Connected Successfully for tabletoCSV method
 2021-12-26 / 17:23:22	Database Connection Closed
+2021-12-26 / 17:38:56	Start Database Connectivity.
+2021-12-26 / 17:38:56	Database connected Successfully for createTable method of DBOperation Class
+2021-12-26 / 17:38:56	Database connection Closed Successfully
+2021-12-26 / 17:38:56	Start Database Connectivity.
+2021-12-26 / 17:38:56	Database connected Successfully for insertIntodb method
+2021-12-26 / 17:40:21	Database connection Closed
+2021-12-26 / 17:40:21	Start Database Connectivity.
+2021-12-26 / 17:40:21	Database Connected Successfully for tabletoCSV method
+2021-12-26 / 17:40:21	Database Connection Closed
+2021-12-27 / 11:52:40	Start Database Connectivity.
+2021-12-27 / 11:52:40	Database connected Successfully for createTable method of DBOperation Class
+2021-12-27 / 11:52:40	Database connection Closed Successfully
+2021-12-27 / 11:52:40	Start Database Connectivity.
+2021-12-27 / 11:52:40	Database connected Successfully for insertIntodb method
+2021-12-27 / 11:54:09	Database connection Closed
+2021-12-27 / 11:54:09	Start Database Connectivity.
+2021-12-27 / 11:54:09	Database Connected Successfully for tabletoCSV method
+2021-12-27 / 11:54:09	Database Connection Closed

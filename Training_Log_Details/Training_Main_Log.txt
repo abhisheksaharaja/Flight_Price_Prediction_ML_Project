@@ -14,3 +14,19 @@
 2021-12-26 / 13:30:34	Successfully load data from Table to CSV
 2021-12-26 / 13:30:34	Database Operation Ended
 2021-12-26 / 13:30:34	Ended Raw Data Validation for Madel Training Dataset. Exit from Training method of Training_Validation Class
+2021-12-27 / 11:39:56	 Start Raw Data Validation for Madel Training Dataset.
+2021-12-27 / 11:39:57	Raw Data Validation Completed
+2021-12-27 / 11:39:57	Start Data Transformation
+2021-12-27 / 11:39:57	End with Data Transformation Process
+2021-12-27 / 11:39:57	Database Operation Started
+2021-12-27 / 11:39:57	Table Created
+2021-12-27 / 11:39:57	Data insertion into Table
+2021-12-27 / 11:44:43	Data Successfully insert into Table
+2021-12-27 / 11:44:43	Deleteing Existing Good Data Folder
+2021-12-27 / 11:44:43	Successfully Deleted Existing Good Data Folder
+2021-12-27 / 11:44:43	Start moving Bad Data Folder into Bad Data Archive Folder
+2021-12-27 / 11:44:43	Successfully move Bad Data Folder into Bad Data Archive Folder
+2021-12-27 / 11:44:43	Start moving Data from Database Table to CSV
+2021-12-27 / 11:44:44	Successfully load data from Table to CSV
+2021-12-27 / 11:44:44	Database Operation Ended
+2021-12-27 / 11:44:44	Ended Raw Data Validation for Madel Training Dataset. Exit from Training method of Training_Validation Class
