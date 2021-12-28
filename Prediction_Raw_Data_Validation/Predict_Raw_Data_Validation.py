@@ -1,3 +1,5 @@
+#doing all necessary import
+
 from datetime import datetime
 import re
 import os
@@ -8,6 +10,9 @@ from Application_Logger.Logger import Log
 
 
 class Predict_Raw_Validation:
+    """
+               This class shall be used for handling all the validation done on the Raw Prediction Data!!.
+    """
 
     def __init__(self,path):
         self.log=Log()
@@ -15,6 +20,14 @@ class Predict_Raw_Validation:
         self.batch_directory=path
 
     def deletePredictFile(self):
+
+        """
+                                      Method Name: deletePredictFile
+                                      Description: This method deletes the Predicted outcome file from last run!
+                                      Output: None
+                                      On Failure: Raise OSError,Exception
+        """
+
         try:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1,'Enter in deletePredictFile method of Predict_Raw_Validation Class. Start Deleteing existing Predicted Output file')
@@ -24,6 +37,12 @@ class Predict_Raw_Validation:
             self.log.log(file1,'Deleted existing Predicted Output file. Exit from deletePredictFile method of Predict_Raw_Validation Class.')
             file1.close()
             return True
+
+        except OSError as e:
+            file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
+            self.log.log(file1, 'Getting an error while delete Existing Predicted Output file in deletePredictFile method of Predict_Raw_Validation Class. Error Msg: '+str(e))
+            file1.close()
+            raise e
         except Exception as e:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Getting an error while delete Existing Predicted Output file in deletePredictFile method of Predict_Raw_Validation Class. Error Msg: '+str(e))
@@ -31,6 +50,16 @@ class Predict_Raw_Validation:
             raise e
 
     def deleteExistingGoodDataFolder(self):
+
+        """
+                                      Method Name: deleteExistingGoodDataFolder
+                                      Description: This method deletes the directory made to store the Good Data
+                                                    after loading the data into database. Once the good files are
+                                                    loaded in the DB,deleting the directory ensures space optimization.
+                                      Output: None
+                                      On Failure: Raise OSError,Exception
+        """
+
         try:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Enter in deleteExistingGoodDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Good Data Folder')
@@ -39,6 +68,12 @@ class Predict_Raw_Validation:
                 shutil.rmtree(path+'Good_Data/')
             self.log.log(file1, 'Deleted Existing Good Data Folder. Exit from deleteExistingGoodDataFolder method of Predict_Raw_Validation Class')
             file1.close()
+
+        except OSError as e:
+            file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
+            self.log.log(file1, 'Getting an error while delete Existing Good Data Folder in deleteExistingGoodDataFolder method of Predict_Raw_Validation Class. Error Msg: '+str(e))
+            file1.close()
+            raise e
         except Exception as e:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Getting an error while delete Existing Good Data Folder in deleteExistingGoodDataFolder method of Predict_Raw_Validation Class. Error Msg: '+str(e))
@@ -46,6 +81,15 @@ class Predict_Raw_Validation:
             raise e
 
     def deleteExistingBadDataFolder(self):
+
+        """
+                                      Method Name: deleteExistingBadDataFolder
+                                      Description: This method deletes the directory made to store the bad
+                                                    Data, deleting the directory ensures space optimization.
+                                      Output: None
+                                      On Failure: Raise OSError,Exception
+        """
+
         try:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Enter in deleteExistingBadDataFolder method of Predict_Raw_Validation Class. Start Deleteing existing Bad Data Folder')
@@ -54,6 +98,12 @@ class Predict_Raw_Validation:
                 shutil.rmtree(path+'Bad_Data/')
             self.log.log(file1, 'Deleted Existing Bad Data Folder. Exit from deleteExistingBadDataFolder method of Predict_Raw_Validation Class')
             file1.close()
+
+        except OSError as e:
+            file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
+            self.log.log(file1, 'Getting an error while delete Existing bad Data Folder in deleteExistingBadDataFolder method of Predict_Raw_Validation Class. Error Msg: '+str(e))
+            file1.close()
+            raise e
         except Exception as e:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Getting an error while delete Existing bad Data Folder in deleteExistingBadDataFolder method of Predict_Raw_Validation Class. Error Msg: '+str(e))
@@ -61,6 +111,15 @@ class Predict_Raw_Validation:
             raise e
 
     def createGoodBadDataFolder(self):
+
+        """
+                                     Method Name: createGoodBadDataFolder
+                                     Description: This method creates directories to store the Good Data
+                                                  and Bad Data after validating the prediction data.
+                                     Output: None
+                                     On Failure: Raise OSError, Exception
+        """
+
         try:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Enter in createGoodBadDataFolder method of Predict_Raw_Validation Class. Start Creating Good and Bad Data Folder')
@@ -74,6 +133,12 @@ class Predict_Raw_Validation:
                 self.log.log(file1, 'Created Bad Data Folder')
             self.log.log(file1, 'Successfully Created Good and Bad Data Folder. Exit from createGoodBadDataFolder method of Predict_Raw_Validation Class')
             file1.close()
+
+        except OSError as e:
+            file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
+            self.log.log(file1, 'Getting an error while delete Existing bad Data Folder in deleteExistingBadDataFolder method of Predict_Raw_Validation Class. Error Msg: '+str(e))
+            file1.close()
+            raise e
         except Exception as e:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Getting an error while Created Good and Bad Data Folder in createGoodBadDataFolder method of  Predict_Raw_Validation Class. Error Msg: ' + str(e))
@@ -82,6 +147,17 @@ class Predict_Raw_Validation:
 
 
     def fileNameValidation(self,regex,datestamplen, timestamplen):
+
+        """
+                                         Method Name: fileNameValidation
+                                         Description: This function validates the name of the prediction csv
+                                                      file as per given name in the schema! Regex pattern is
+                                                      used to do the validation.If name format do not match
+                                                      the file is moved to Bad Data folder else in Good data.
+                                         Output: None
+                                         On Failure: Exception
+        """
+
         self.deleteExistingGoodDataFolder()
         self.deleteExistingBadDataFolder()
         self.createGoodBadDataFolder()
@@ -121,6 +197,18 @@ class Predict_Raw_Validation:
 
 
     def colLengthValidation(self,collen):
+
+        """
+                                    Method Name: colLengthValidation
+                                    Description: This function validates the number of columns in the csv files.
+                                                 It is should be same as given in the schema file. If not same
+                                                 file is not suitable for processing and thus is moved to Bad
+                                                 Data folder. If the column number matches, file is kept in Good
+                                                 Data for processing.
+                                    Output: None
+                                    On Failure: Raise Exception
+        """
+
         try:
             file1 = open('Prediction_Log_Details/ColumnLengthValidation.txt', 'a+')
             file2 = open('Prediction_Log_Details/General_Log.txt', 'a+')
@@ -148,6 +236,17 @@ class Predict_Raw_Validation:
 
 
     def missingWholeColumnValidation(self):
+
+        """
+                                         Method Name: missingWholeColumnValidation
+                                         Description: This function validates if any column in the csv file has
+                                                      all values missing. If all the values are missing, the file
+                                                      is not suitable for processing. Such files are moved
+                                                      to bad data.
+                                         Output: None
+                                         On Failure: Exception
+        """
+
         try:
             file_1 = open('Prediction_Log_Details/MissingValueInWholeColumns.txt', 'a+')
             file_2 = open('Prediction_Log_Details/General_Log.txt', 'a+')
@@ -177,6 +276,17 @@ class Predict_Raw_Validation:
 
 
     def moveBadDataIntoArchiveFolder(self):
+
+        """
+                                     Method Name: moveBadDataIntoArchiveFolder
+                                     Description: This method deletes the directory made to store the
+                                                  Bad Data after moving the data in an archive folder.
+                                                  We archive the bad files to send them back to the
+                                                  client for invalid data issue.
+                                     Output: None
+                                     On Failure: Raise OSError, Exception
+        """
+
         try:
             now=datetime.now()
             date=now.date()
@@ -205,6 +315,14 @@ class Predict_Raw_Validation:
             self.log.log(file2, 'Complete moving file from Bad folder to Archive folder and bad data folder files also deleted. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class')
             file1.close()
             file2.close()
+
+        except OSError as e:
+            file1 = open('Prediction_Log_Details/BadDataMoveArchiveLog.txt', 'a+')
+            file2 = open('Prediction_Log_Details/General_Log.txt', 'a+')
+            self.log.log(file1,'Getting an Error while move File from Bad Data folder to Archive Folder in badDataArchiveFolder method of Predict_Raw_Validation Class. Error Msg: ' + str(e))
+            self.log.log(file2,'Getting an Error while move File from Bad Data folder to Archive Folder in badDataArchiveFolder method of Predict_Raw_Validation Class. Error Msg: ' + str(e))
+            file1.close()
+            file1.close()
         except Exception as e:
             file1 = open('Prediction_Log_Details/BadDataMoveArchiveLog.txt', 'a+')
             file2 = open('Prediction_Log_Details/General_Log.txt', 'a+')
@@ -214,6 +332,15 @@ class Predict_Raw_Validation:
             file1.close()
 
     def valueFromSchema(self):
+
+        """
+                                    Method Name: valueFromSchema
+                                    Description: This method extracts all the relevant information from the
+                                                 pre-defined "schema_prediction" file.
+                                    Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, Number of Columns, column_names
+                                    On Failure: Raise ValueError,KeyError,Exception
+        """
+
         try:
             file1 = open('Prediction_Log_Details/ValueFromSchemaLog.txt', 'a+')
             file2 = open('Prediction_Log_Details/General_Log.txt', 'a+')
@@ -263,5 +390,15 @@ class Predict_Raw_Validation:
             raise e
 
     def getRegex(self):
-        regex="[FlightPrice]+['\_'']+[\d_]+[\d]+\.csv"
+
+        """
+                                    Method Name: getRegex
+                                    Description: This method contains a manually defined regex based on
+                                                 the "FileName" given in "Schema" file. This Regex is used
+                                                 to validate the filename of the prediction data.
+                                    Output: Regex pattern
+                                    On Failure: None
+        """
+
+        regex="['FlightPrice']+['\_'']+[\d_]+[\d]+\.csv"
         return regex

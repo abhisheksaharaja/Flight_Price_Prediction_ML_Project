@@ -1,12 +1,8 @@
-2021-12-26 / 13:37:30	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
-2021-12-26 / 13:37:30	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
-2021-12-26 / 13:44:22	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
-2021-12-26 / 13:44:22	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
-2021-12-26 / 17:21:31	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
-2021-12-26 / 17:21:32	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
-2021-12-26 / 17:23:22	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
-2021-12-26 / 17:23:22	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
-2021-12-26 / 17:40:21	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
-2021-12-26 / 17:40:21	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
-2021-12-27 / 11:54:09	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
-2021-12-27 / 11:54:09	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
+2021-12-28 / 21:52:02	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
+2021-12-28 / 21:52:02	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
+2021-12-28 / 21:53:36	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
+2021-12-28 / 21:53:37	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
+2021-12-28 / 21:54:57	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
+2021-12-28 / 21:54:57	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
+2021-12-28 / 21:56:10	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
+2021-12-28 / 21:56:10	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class

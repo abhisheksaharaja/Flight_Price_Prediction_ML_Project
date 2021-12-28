@@ -1,15 +1,31 @@
+#Doing necessary imports
+
 import os
 import pickle
 import shutil
 
 
 class File_Operation:
+
+    """
+                This class shall be used to save the model after training
+                and load the saved model for prediction.
+    """
+
     def __init__(self,log,file_object):
         self.log=log
         self.file_object=file_object
         self.Madel_base_path='Madel/'
 
     def SaveMadel(self,madel,filename):
+
+        """
+                                        Method Name: SaveMadel
+                                        Description: Save the model file to directory
+                                        Outcome: File gets saved
+                                        On Failure: Raise Exception
+        """
+
         self.log.log(self.file_object,'Entered in Save_Madel method of the File_Operation class. To Save Madel')
         try:
             path=os.path.join(self.Madel_base_path,filename)
@@ -22,21 +38,39 @@ class File_Operation:
                 pickle.dump(madel, f)
             self.log.log(self.file_object, 'Madel '+str(filename)+' Save Successfully')
             return ' Successfully '
+
         except Exception as e:
             self.log.log(self.file_object,'Getting an error while Saving Madel '+str(filename)+' in SaveMadel method of File_Operation Class. Error Message: ' + str(e))
             raise e
 
     def LoadMadel(self,filename):
+
+        """
+                                        Method Name: LoadMadel
+                                        Description: load the model file to memory
+                                        Output: The Model file loaded in memory
+                                        On Failure: Raise Exception
+        """
+
         self.log.log(self.file_object,'Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.')
         try:
             with open(self.Madel_base_path+'/'+filename+'/'+filename+'.sav', 'rb') as f:
                 self.log.log(self.file_object,'Madel '+str(filename)+' loaded Successfully')
                 return pickle.load(f)
+
         except Exception as e:
             self.log.log(self.file_object, 'Getting an error while Loading Madel ' + str(filename) + ' in LoadMadel method of File_Operation Class. Error Message: ' + str(e))
             raise e
 
     def FindCorrectMadel(self,clusterno):
+
+        """
+                                        Method Name: FindCorrectMadel
+                                        Description: Select the correct model based on cluster number
+                                        Output: The Model file
+                                        On Failure: Raise Exception
+        """
+
         self.log.log(self.file_object,"Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster")
         try:
             self.folder_name=self.Madel_base_path
@@ -52,6 +86,7 @@ class File_Operation:
             self.madel=self.madel.split('.')[0]
             self.log.log(self.file_object,'Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class')
             return self.madel
+
         except Exception as e:
             self.log.log(self.file_object, 'Getting an error while Find the correct Madel in FindCorrectMadel method of File_Operation Class. Error Message: ' + str(e))
             raise e

@@ -1,3 +1,5 @@
+# Doing the necessary imports
+
 from Prediction_Raw_Data_Validation.Predict_Raw_Data_Validation import Predict_Raw_Validation
 from Application_Logger.Logger import Log
 from Prediction_Data_Transformation.Data_Transformation import Data_Transform
@@ -14,34 +16,56 @@ class Predict_Validation:
     def Prediction(self):
         try:
             self.log.log(self.file_object, 'Start Raw Data Validation For Prediction Dataset')
+
+            # extracting values from schema
             fileName,dateStamp, timestamp, colNumber, colName=self.raw_data.valueFromSchema()
+
+            # getting the regex defined to validate filename
             regex=self.raw_data.getRegex()
+
+            # validating filename of prediction files
             self.raw_data.fileNameValidation(regex,dateStamp,timestamp)
+
+            # validating column length in the file
             self.raw_data.colLengthValidation(colNumber)
+
+            # validating if any column has all values missing
             self.raw_data.missingWholeColumnValidation()
             self.log.log(self.file_object, 'Raw Data Validation Completed')
 
             self.log.log(self.file_object, 'Start Data Transformation')
+
+            # replacing blanks in the csv file with "Null" values to insert in table
             self.data_transform.Transformation()
             self.log.log(self.file_object, 'Completed Data Transformation')
 
             self.log.log(self.file_object, 'Database Operation Started')
+
+            # create database with given name, if present open the connection! Create table with columns given in schema
             self.dboperation.createTable('Prediction', colName)
             self.log.log(self.file_object, 'Table Created')
 
             self.log.log(self.file_object, 'Data insertion into Table')
+
+            # insert csv files in Database
             self.dboperation.insertIntodb('Prediction')
             self.log.log(self.file_object, 'Data Successfully insert into Table')
 
             self.log.log(self.file_object, 'Deleting Existing Good Data Folder')
+
+            # Delete the good data folder after loading files in table
             self.raw_data.deleteExistingGoodDataFolder()
             self.log.log(self.file_object, 'Successfully Deleted Existing Good Data Folder')
 
             self.log.log(self.file_object, 'Start moving Bad Data Folder into Bad Data Archive Folder')
+
+            # Move the bad files to archive folder
             self.raw_data.moveBadDataIntoArchiveFolder()
             self.log.log(self.file_object, 'Successfully move Bad Data Folder into Bad Data Archive Folder')
 
             self.log.log(self.file_object, 'Start moving Data from Database Table to CSV')
+
+            # export data from Database to csvfile
             self.dboperation.tabletoCSV('Prediction')
             self.log.log(self.file_object, 'Successfully load data from Table to CSV')
             self.log.log(self.file_object, 'Database Operation Ended')
@@ -49,7 +73,7 @@ class Predict_Validation:
             self.file_object.close()
 
         except Exception as e:
-            self.logger.log(self.file_object, 'Getting an error while Perform Raw Data Validation For Prediction Dataset. Error Msg: '+str(e))
+            self.log.log(self.file_object, 'Getting an error while Perform Raw Data Validation For Prediction Dataset. Error Msg: '+str(e))
             self.file_object.close()
             raise e
 

@@ -1,3 +1,5 @@
+#doing all necessary import
+
 import csv
 import os
 import shutil
@@ -5,6 +7,11 @@ import sqlite3
 from Application_Logger.Logger import Log
 
 class DBOperation:
+
+    """
+               This class shall be used for handling all the SQL operations.
+    """
+
     def __init__(self):
         self.db_path='Training_db/'
         self.good_data='Training_Raw_File_Validated/Good_Data'
@@ -12,6 +19,16 @@ class DBOperation:
         self.logger=Log()
 
     def createTable(self, Databasename,colname):
+
+        """
+                                        Method Name: createTable
+                                        Description: This method creates a table in the given database which
+                                                     will be used to insert the Good data Directory after
+                                                     raw data validation.
+                                        Output: None
+                                        On Failure: Raise Exception
+        """
+
         file_1 = open('Training_Log_Details/DBConnection.txt', 'a+')
         file_2 = open('Training_Log_Details/CreateTable.txt', 'a+')
         try:
@@ -45,6 +62,17 @@ class DBOperation:
             file_2.close()
 
     def CreateConnection(self,dbname):
+
+        """
+                                       Method Name: CreateConnection
+                                       Description: This method creates the database with the given name and
+                                                    if Database already exists then opens the connection to the DB
+                                                    and return the connection object.
+                                       Output: Connection to the DB
+                                       On Failure: Raise ConnectionError
+
+        """
+
         f=open('Training_Log_Details/DBConnection.txt', 'a+')
         try:
 
@@ -52,12 +80,21 @@ class DBOperation:
             conn=sqlite3.connect(self.db_path+dbname+'.db')
             f.close()
             return conn
-        except Exception as e:
+        except ConnectionError as e:
             self.logger.log(f, 'Error while Establish Connection with Database. Error Msg: '+str(e))
             f.close()
             raise e
 
     def InsertIntoDB(self,databasename):
+
+        """
+                                    Method Name: InsertIntoDB
+                                    Description: This method insert the Good data files from the Good_Data
+                                                 Directory into Database.
+                                    Output: None
+                                    On Failure: Raise Exception
+        """
+
         file1=open('Training_Log_Details/DbInsertion.txt','a+')
         file2 = open('Training_Log_Details/DBConnection.txt', 'a+')
         goodfile=self.good_data
@@ -97,6 +134,15 @@ class DBOperation:
             raise e
 
     def InsertIntoCSV(self,databasename):
+
+        """
+                                    Method Name: InsertIntoCSV
+                                    Description: This method fetch data from Good_Raw_Data table to a CSV
+                                                 file into a specified given location.
+                                    Output: None
+                                    On Failure: Raise Exception
+        """
+
         self.FileFromDB='Training_File_From_DB/'
         self.FileName='Input.csv'
         file1=open('Training_Log_Details/CSVLoad.txt','a+')

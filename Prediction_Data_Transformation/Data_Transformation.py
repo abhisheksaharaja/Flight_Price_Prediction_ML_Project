@@ -1,14 +1,32 @@
+# doing all necessary imports
+
 import os
 from Application_Logger.Logger import Log
 import pandas as pd
 
 
 class Data_Transform:
+
+    """
+                      This class shall be used for transforming the Good Data Training Data before loading it in
+                      Database!!.
+    """
+
     def __init__(self):
         self.log=Log()
         self.source='Prediction_Raw_File_Validated/Good_Data/'
 
     def Transformation(self):
+
+        """
+                                        Method Name: Transformation
+                                        Description: This method replaces the missing values in columns with "NULL" to
+                                                     store in the table and typecast all data into string to store
+                                                     into Database.
+                                        Output: None
+                                        On Failure: Raise Exception
+        """
+
         try:
             file_1=open('Prediction_Log_Details/Prediction_Data_Transform_Log.txt', 'a+')
             file_2 = open('Prediction_Log_Details/General_Log.txt', 'a+')

@@ -1,3 +1,5 @@
+# doing all necessary import
+
 import csv
 import os
 import shutil
@@ -6,6 +8,11 @@ from Application_Logger.Logger import Log
 
 
 class DBOperation:
+
+    """
+          This class shall be used for handling all the SQL operations.
+    """
+
     def __init__(self):
         self.good_data='Prediction_Raw_File_Validated/Good_Data'
         self.bad_data='Prediction_Raw_File_Validated/Bad_Data'
@@ -13,6 +20,16 @@ class DBOperation:
         self.log=Log()
 
     def dbconnection(self, databasename):
+
+        """
+                                      Method Name: dbconnection
+                                      Description: This method creates the database with the given name and if Database
+                                                   already exists then opens the connection and return the connection
+                                                   object.
+                                      Output: Connection to the DB
+                                      On Failure: Raise ConnectionError
+        """
+
         try:
             file_1=open('Prediction_Log_Details/DBConnection_Log.txt','a+')
             self.log.log(file_1, 'Start Database Connectivity.')
@@ -27,6 +44,15 @@ class DBOperation:
 
 
     def createTable(self,databasename,colname):
+
+        """
+                                        Method Name: createTable
+                                        Description: This method creates a table in the given database which will be used
+                                                     to insert the Good data after raw data validation.
+                                        Output: None
+                                        On Failure: Raise Exception
+        """
+
         try:
             file_1 = open('Prediction_Log_Details/DBConnection_Log.txt', 'a+')
             file_2 = open('Prediction_Log_Details/CreateTable_Log.txt', 'a+')
@@ -58,6 +84,15 @@ class DBOperation:
             raise e
 
     def insertIntodb(self, databasename):
+
+        """
+                                      Method Name: insertIntodb
+                                      Description: This method inserts the Good data files from the Good_Data Directory.
+                                                   into the above created table.
+                                      Output: None
+                                      On Failure: Raise Exception
+        """
+
         good_data=self.good_data
         bad_data=self.bad_data
         try:
@@ -99,6 +134,15 @@ class DBOperation:
 
 
     def tabletoCSV(self,databasename):
+
+        """
+                                      Method Name: tabletoCSV
+                                      Description: This method exports the data from Good_Raw_Data table
+                                                   into a CSV file in a given location.
+                                      Output: None
+                                      On Failure: Raise Exception
+        """
+
         try:
             self.filefromDb='Prediction_File_From_DB/'
             self.filename='InputFile.csv'

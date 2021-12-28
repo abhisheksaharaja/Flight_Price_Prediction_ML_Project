@@ -1,3 +1,5 @@
+#doing all necessary import
+
 import re
 import os
 import shutil
@@ -7,14 +9,29 @@ import pandas as pd
 from datetime import datetime
 
 class Raw_Validation:
+
+    """
+                This class shall be used for handling all the validation done on
+                the Raw Training Data!!.
+    """
+
     def __init__(self,data_path):
         self.batch_directory=data_path
         self.schema='schema_training.json'
         self.Log=Log()
 
 
-    # Getting Value From Schema
     def ValueFromSchema(self):
+
+        """
+                                    Method Name: ValueFromSchema
+                                    Description: This method extracts all the relevant information from the
+                                                 pre-defined "schema_training" file.
+                                    Output: LengthOfDateStampInFile, LengthOfTimeStampInFile,
+                                             Number of Columns, column_names
+                                    On Failure: Raise ValueError,KeyError,Exception
+        """
+
         file = open('Training_Log_Details/ValueFromSchemaValidation.txt', 'a+')
         try:
             self.Log.log(file, 'Enter in ValueFromSchema method of Raw_Validation Class. Start Reading Value from Schema')
@@ -45,10 +62,31 @@ class Raw_Validation:
             raise e
 
     def mutual_regex(self):
+
+        """
+                                   Method Name: mutual_regex
+                                   Description: This method contains a manually defined regex based on the
+                                                 "FileName" given in "schema_training" file. This Regex is used
+                                                 to validate the filename of the training data.
+                                   Output: Regex pattern
+                                   On Failure: None
+        """
+
         regex="['FlightPrice']+['\_'']+[\d_]+[\d]+\.csv"
         return regex
 
     def DeletExistingGoodData(self):
+
+        """
+                                     Method Name: DeletExistingGoodData
+                                     Description: This method deletes the existing Good Data directory made
+                                                  to store the Good Data after loading the data in database.
+                                                  Once the good files are loaded in the DB,deleting the directory
+                                                  ensures space optimization.
+                                     Output: None
+                                     On Failure: Raise OSError, Exception
+        """
+
         file = open('Training_Log_Details/General_Log.txt', 'a+')
         try:
             self.Log.log(file,'Enter in DeletExistingGoodData method of Raw_Validation Class. Start Deleting Existing Good Data Folder')
@@ -58,12 +96,26 @@ class Raw_Validation:
                 shutil.rmtree(path+'Good_Data/')
             self.Log.log(file,'Deleted Existing Good Data Folder. Exit from DeletExistingGoodData method of Raw_Validation Class')
             file.close()
+
+        except OSError as e:
+            self.Log.log(file,'Error Occoured while Deleteing Existing Good Data Folder in DeletExistingGoodData method of Raw_Validation Class. Error Msg: '+str(e))
+            file.close()
+            raise e
         except Exception as e:
             self.Log.log(file,'Error Occoured while Deleteing Existing Good Data Folder in DeletExistingGoodData method of Raw_Validation Class. Error Msg: '+str(e))
             file.close()
             raise e
 
     def DeleteExistingBadData(self):
+
+        """
+                                       Method Name: DeleteExistingBadData
+                                       Description: This method deletes the directory to store the bad Data,
+                                                    to ensures space optimization.
+                                       Output: None
+                                       On Failure: Raise OSError, Exception
+        """
+
         file=open('Training_Log_Details/General_Log.txt', 'a+')
         try:
             self.Log.log(file, 'Enter in DeleteExistingBadData method of Raw_Validation Class. Start Existing Deleting Bad Data Folder')
@@ -72,13 +124,27 @@ class Raw_Validation:
                 shutil.rmtree(path+'Bad_Data/')
             self.Log.log(file, 'Deleted Existing Bad Data Folder. Exit from DeleteExistingBadData method of Raw_Validation Class')
             file.close()
+
+        except OSError as e:
+            self.Log.log(file, 'Error Occoured while Deleteing Existing Bad Data Folder in DeletExistingBadData method of Raw_Validation Class. Error Msg: '+str(e))
+            file.close()
+            raise e
         except Exception as e:
             self.Log.log(file, 'Error Occoured while Deleteing Existing Bad Data Folder in DeletExistingBadData method of Raw_Validation Class. Error Msg: '+str(e))
             file.close()
             raise e
 
 
-    def CreateGoodBadData(self):
+    def CreateGoodBadDataDirectory(self):
+
+        """
+                                  Method Name: CreateGoodBadDataDirectory
+                                  Description: This method creates directories to store the Good Data and
+                                                Bad Data after validating the training data.
+                                  Output: None
+                                  On Failure: Raise OSError, Exception
+        """
+
         file=open('Training_Log_Details/General_Log.txt', 'a+')
         path_1=os.path.join('Training_Raw_File_Validated/', 'Bad_Data/')
         path_2= os.path.join('Training_Raw_File_Validated/', 'Good_Data/')
@@ -93,15 +159,31 @@ class Raw_Validation:
             self.Log.log(file, 'Created new Good Data Folder')
             self.Log.log(file, 'Successfully Created new Good and Bad Data Folder.Exit from CreateGoodBadData method of Raw_Validation Class')
             file.close()
+
+        except OSError as e:
+            self.Log.log(file, 'Error Occoured while Creating Good and Bad Data Folder in CreateGoodBadData method of Raw_Validation Class. Error Msg: '+str(e))
+            file.close()
+            raise e
         except Exception as e:
             self.Log.log(file, 'Error Occoured while Creating Good and Bad Data Folder in CreateGoodBadData method of Raw_Validation Class. Error Msg: '+str(e))
             file.close()
             raise e
 
     def FileNameValidation(self,regex,datestamp,timestamp):
+
+        """
+                                Method Name: FileNameValidation
+                                Description: This function validates the name of the training csv files as
+                                             per given name in the schema! Regex pattern is used to do the
+                                             validation. If name format do not match the file is moved
+                                             to Bad Data folder else in Good data.
+                                Output: None
+                                On Failure: Raise Exception
+        """
+
         self.DeleteExistingBadData()
         self.DeletExistingGoodData()
-        self.CreateGoodBadData()
+        self.CreateGoodBadDataDirectory()
         try:
             file_1 = open('Training_Log_Details/FileNameValidation.txt', 'a+')
             self.Log.log(file_1, 'Enter in FileNameValidation method of Raw_Validation Class. File Name Validation Started')
@@ -132,6 +214,18 @@ class Raw_Validation:
             raise e
 
     def ColumnLengthValidation(self,colnum):
+
+        """
+                                     Method Name: ColumnLengthValidation
+                                     Description: This function validates the number of columns in the csv
+                                                  files. It is should be same as given in the schema file.
+                                                  If not same file is not suitable for processing and then
+                                                  file moved into Bad Data folder. If the column number
+                                                  matches, file is kept in Good Data for processing.
+                                     Output: None
+                                     On Failure: Raise Exception
+        """
+
         try:
             f=open('Training_Log_Details/FileColumnLengthValidation.txt', 'a+')
             self.Log.log(f,'Enter in ColumnLengthValidation method of Raw_Validation Class. File Column Length validation Started')
@@ -152,6 +246,17 @@ class Raw_Validation:
 
 
     def MissingValueInWholeColumnValidation(self):
+
+        """
+                                        Method Name: MissingValueInWholeColumnValidation
+                                        Description: This function validates if any column in the csv file has
+                                                     all values missing. If all the values are missing, that
+                                                     column is not suitable for processing. SUch files are
+                                                     moved to bad raw data.
+                                        Output: None
+                                        On Failure: Raise Exception
+        """
+
         try:
             f=open('Training_Log_Details/MissingValueInWholeColum.txt','a+')
             self.Log.log(f,'Enter in MissingValueInWholeColumnValidation method of Raw_Validation Class. Start Validation to Find Any Column entirely Contain Missing Value')
@@ -172,6 +277,18 @@ class Raw_Validation:
             raise Exception
 
     def MoveBadArchiveFolder(self):
+
+        """
+                                     Method Name: MoveBadArchiveFolder
+                                     Description: This method deletes the directory made to store the
+                                                  Bad Data after moving the data in an archive folder.
+                                                  Then archive the bad files to send them back to the
+                                                  client for invalid data issue.
+                                     Output: None
+                                     On Failure: Raise OSError, Exception
+
+        """
+
         file1=open('Training_Log_Details/MoveBadArchiveFolder.txt','a+')
         file_2 = open('Training_Log_Details/General_Log.txt', 'a+')
         self.Log.log(file1, 'Enter in MoveBadArchiveFolder method of Raw_Validation Class. Start Bad Data moving into Archive Folder')
@@ -199,8 +316,13 @@ class Raw_Validation:
             file_2.close()
             file1.close()
 
+        except OSError as e:
+            self.Log.log(file1, 'Error Occurred while File Move from bad data to Archive folder in MissingValueInWholeColumnValidation method of Raw_Validation Class. Error Msg: '+str(e))
+            file1.close()
+            file_2.close()
+            raise e
         except Exception as e:
-            self.Log.log(file1, 'Error Occoured while File Move from bad data to Archive folder in MissingValueInWholeColumnValidation method of Raw_Validation Class. Error Msg: '+str(e))
+            self.Log.log(file1, 'Error Occurred while File Move from bad data to Archive folder in MissingValueInWholeColumnValidation method of Raw_Validation Class. Error Msg: '+str(e))
             file1.close()
             file_2.close()
             raise e

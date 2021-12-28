@@ -1,5 +1,6 @@
-import os.path
+#doing all necessary imports
 
+import os.path
 import pandas as pd
 from Prediction_Raw_Data_Validation.Predict_Raw_Data_Validation import Predict_Raw_Validation
 from Data_Ingestion.Prediction_Data_Loader import PredictLoadData
@@ -18,6 +19,8 @@ class predictionMadel:
 
     def madelPrediction(self):
         try:
+
+            # deletes the existing prediction file from last run!
             if(self.raw_data.deletePredictFile()):
                 self.log.log(self.file_object, 'Deleted last Predicted output file')
             else:
@@ -72,10 +75,10 @@ class predictionMadel:
             self.log.log(self.file_object, 'End of Prediction. Exit from madelPrediction method of PredictionMadel Class')
             return path, result.head().to_json(orient="records")
 
-        except Exception as ex:
+        except Exception as e:
             self.log.log(self.file_object, 'Error occurred while running the prediction!! Error Msg:'+str(e))
             self.file_object.close()
-            raise ex
+            raise e
 
 
 

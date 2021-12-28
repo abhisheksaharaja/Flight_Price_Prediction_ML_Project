@@ -1,3 +1,5 @@
+# Doing the necessary imports
+
 import json
 from flask import Flask, render_template, request, Response
 from Training_Validation_Insertion import Training_Validation
@@ -30,20 +32,20 @@ def PredictClient():
     try:
         if request.form is not None:
             path=request.form['filepath']
-            predict_validation_obj=Predict_Validation(path)
-            predict_validation_obj.Prediction()
+            predict_validation_obj=Predict_Validation(path) # object initialization for Prediction data Validation
+            predict_validation_obj.Prediction()             # calling the prediction_validation function
 
-            pred=predictionMadel(path)
-            predict_path, json_predictions=pred.madelPrediction()
+            pred=predictionMadel(path)         # object initialization for Prediction data to predict result by Madel
+            predict_path, json_predictions=pred.madelPrediction()  # predicting for dataset in CSV format by train madel
             return Response("Prediction File created at !!!" + str(predict_path) + 'and few of the predictions are ' + str(json.loads(json_predictions)))
 
         elif request.json is not None:
             path=request.json['filepath']
-            predict_validation_obj=Predict_Validation(path)
-            predict_validation_obj.Prediction()
+            predict_validation_obj=Predict_Validation(path)  # object initialization for Prediction data Validation
+            predict_validation_obj.Prediction()      # calling the prediction_validation function
 
-            pred=predictionMadel(path)
-            predict_path, json_predictions=pred.madelPrediction()
+            pred=predictionMadel(path)          # object initialization for Prediction data to predict result by Madel
+            predict_path, json_predictions=pred.madelPrediction()  # predicting for dataset in CSV format by train madel
             return Response("Prediction File created at !!!" + str(predict_path) + 'and few of the predictions are ' + str(json.loads(json_predictions)))
 
         else:
@@ -63,11 +65,11 @@ def trainRouteClient():
         folder_path='Training_Batch_Files'
         if folder_path is not None:
             path=folder_path
-            train_validation_obj=Training_Validation(path)
-            train_validation_obj.Training()
+            train_validation_obj=Training_Validation(path)  # object initialization for training data Validation
+            train_validation_obj.Training()    # calling the training_validation function
 
-            train_Madel_obj=TrainingMadel()
-            train_Madel_obj.MadelTraining()
+            train_Madel_obj=TrainingMadel()   # object initialization for Training dataset to train the Madel
+            train_Madel_obj.MadelTraining()   # training the model for dataset in CSV
 
     except ValueError:
         return Response('Error Occurred ValueError')
@@ -81,7 +83,7 @@ def trainRouteClient():
 
 
 
-port = int(os.getenv("PORT", 5001))
+port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
     host = '0.0.0.0'
     httpd = simple_server.make_server(host, port, app)
