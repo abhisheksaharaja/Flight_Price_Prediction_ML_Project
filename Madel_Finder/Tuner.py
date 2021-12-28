@@ -34,7 +34,7 @@ class MadelTuner:
             # initializing with different combination of parameters
             self.params = {'max_depth': [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13],
                       'learning_rate': [0.001,0.0001,0.0002,0.003,0.1,0.002,0.0003],
-                      'n_estimators': [i for i in range(400, 2000)],
+                      'n_estimators': [i for i in range(200, 600)],
                       'reg_lambda': [0.001, 0.1, 1.0, 10.0, 19.0, 29.0, 35.0, 45.0, 60.0],
                       'colsample_bytree': [0.3, 0.4, 0.2, 0.1]
                       }
@@ -81,7 +81,7 @@ class MadelTuner:
         try:
 
             # initializing with different combination of parameters
-            self.grid={ 'n_estimators': [f for f in range(650, 2000)],
+            self.grid={ 'n_estimators': [f for f in range(250, 600)],
                     'max_features': ['auto', 'sqrt'],
                     'max_depth': [f for f in range(10, 30)],
                     'min_samples_split': [10, 15, 20, 27, 32, 35, 37],

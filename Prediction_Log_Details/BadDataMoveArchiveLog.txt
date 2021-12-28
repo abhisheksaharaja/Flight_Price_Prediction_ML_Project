@@ -1,8 +1,6 @@
-2021-12-28 / 21:52:02	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
-2021-12-28 / 21:52:02	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
-2021-12-28 / 21:53:36	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
-2021-12-28 / 21:53:36	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
-2021-12-28 / 21:54:57	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
-2021-12-28 / 21:54:57	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
-2021-12-28 / 21:56:10	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
-2021-12-28 / 21:56:10	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2021-12-28 / 23:05:25	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2021-12-28 / 23:05:25	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2021-12-28 / 23:07:53	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2021-12-28 / 23:07:53	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2021-12-28 / 23:17:37	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2021-12-28 / 23:17:37	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
