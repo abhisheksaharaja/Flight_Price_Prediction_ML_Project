@@ -13,6 +13,11 @@ class Data_Preprocessing:
     """
                     This class shall be used to clean and transform the data before training.
 
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
+
     """
 
     def __init__(self,log,file_object):
@@ -26,10 +31,15 @@ class Data_Preprocessing:
                                      Description: This method remove duplicate rows from a pandas dataframe .
                                      Output: A pandas DataFrame contain unique rows.
                                      On Failure: Raise Exception
+
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
         """
 
         self.log.log(self.file_object, 'Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows')
-        self.data=data
+        self.data = data
         try:
             temp=self.data.duplicated().sum()
             if temp>0:
@@ -50,17 +60,22 @@ class Data_Preprocessing:
                                         Output: Returns two separate Dataframes, one containing features and
                                                 the other containing Labels .
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         self.log.log(self.file_object, 'Enter in SeperateLabelFeature method of Data_Preprocessing Class .Starting Separate Label Feature')
         try:
             self.x=data.drop(labels=col,axis=1)
             self.y=data[col]
-            self.log.log(self.file_object,'Label Feature Separation Completed. Exit from SeperateLabelFeature method of Data_Preprocessing Class')
+            self.log.log(self.file_object,'Label Feature Separation Completed. Exit from SeparateLabelFeature method of Data_Preprocessing Class')
             return self.x,self.y
 
         except Exception as e:
-            self.log.log(self.file_object,'Label Feature Seperation unsuccessful, Error Message: '+str(e))
+            self.log.log(self.file_object,'Label Feature Separation unsuccessful, Error Message: '+str(e))
             raise e
 
     def IsNullPresent(self,x):
@@ -70,8 +85,14 @@ class Data_Preprocessing:
                                        Description: This method checks whether there are null values present
                                                     in the pandas Dataframe or not.
                                        Output: Returns a Boolean Value and columns contain null value.True if
-                                                null values are present in the DataFrame, False if they are not present.
+                                                null values are present in the DataFrame, False if they are not
+                                                present.
                                        On Failure: Raise Exception
+
+
+                                       Written By: Abhishek Saha
+                                       Version: 1.0
+                                       Revisions: None
         """
 
         self.log.log(self.file_object, 'Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values')
@@ -93,7 +114,7 @@ class Data_Preprocessing:
             return self.Null_Present, self.cols_with_missing_values
 
         except Exception as e:
-            self.log.log(self.file_object,'Exception occured in IsNullPresent method of the Preprocessor class. Error Message: '+str(e))
+            self.log.log(self.file_object,'Exception occurred in IsNullPresent method of the Preprocessor class. Error Message: '+str(e))
             raise e
 
     def ImputeMissingValue(self,data,col):
@@ -104,6 +125,11 @@ class Data_Preprocessing:
                                                    By Random sample Imputation Technique .
                                       Output: A Dataframe which has all the missing values imputed.
                                       On Failure: Raise Exception
+
+
+                                      Written By: Abhishek Saha
+                                      Version: 1.0
+                                      Revisions: None
         """
 
         self.log.log(self.file_object, 'Enter in ImputeMissingValue method of Data_Preprocessing Class. Start Imputing missing Values')
@@ -125,16 +151,21 @@ class Data_Preprocessing:
             return self.data
 
         except Exception as e:
-            self.log.log(self.file_object, 'Error Occoured while Impute the Missing value In ImputeMissingValue method of Data_Preprocessing Class. Error Message: '+str(e))
+            self.log.log(self.file_object, 'Error Occurred while Impute the Missing value In ImputeMissingValue method of Data_Preprocessing Class. Error Message: '+str(e))
             raise e
 
-    def DateOfJourneyFeatureFormat(self,data,colname):
+    def DateOfJourneyFeatureFormat(self, data, colname):
 
         """
                                           Method Name: DateOfJourneyFeatureFormat
                                           Description: This method Formatting the Date_of_Journey feature.
                                           Output: A pandas DataFrame after Formatting the Date_of_Journey feature.
                                           On Failure: Raise Exception
+
+
+                                          Written By: Abhishek Saha
+                                          Version: 1.0
+                                          Revisions: None
         """
 
         self.log.log(self.file_object, 'Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature')
@@ -160,6 +191,11 @@ class Data_Preprocessing:
                                          Description: This method Formatting the Dep_Time, Arrival_Time feature.
                                          Output: A pandas DataFrame after Formatting the Dep_Time, Arrival_Time feature.
                                          On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         self.log.log(self.file_object, 'Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature')
@@ -167,11 +203,11 @@ class Data_Preprocessing:
         try:
             self.data[col + '_Hour'] = pd.to_datetime(self.data[col]).dt.hour
             self.data[col + '_Minute'] = pd.to_datetime(self.data[col]).dt.minute
-            self.log.log(self.file_object,'Sucsessfully impute Time Format Feature also create two new feature to store Hour and Minute seperately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.')
+            self.log.log(self.file_object,'Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.')
             return self.data
 
         except Exception as e:
-            self.log.log(self.file_object,'Error Occoured while Impuet the TimeFeatureFormat method of Data_Preprocessing Class. Error Message: ' + str(e))
+            self.log.log(self.file_object,'Error Occurred while Impute the TimeFeatureFormat method of Data_Preprocessing Class. Error Message: ' + str(e))
             raise e
 
     def TimeFeatureFormat_1(self,data,colname):
@@ -181,6 +217,11 @@ class Data_Preprocessing:
                                         Description: This method Formatting the Duration feature.
                                         Output: A pandas DataFrame after Formatting the Duration feature.
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         self.log.log(self.file_object, 'Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting')
@@ -208,7 +249,7 @@ class Data_Preprocessing:
             return data
 
         except Exception as e:
-            self.log.log(self.file_object, 'Getting an error while PErform Duration Feature Formatting in TimeFeatureFormat_1 method of Data_Preprocessing Class. Error Message: '+str(e))
+            self.log.log(self.file_object, 'Getting an error while Perform Duration Feature Formatting in TimeFeatureFormat_1 method of Data_Preprocessing Class. Error Message: '+str(e))
             raise e
 
     def LabelEncoding(self,x):
@@ -220,6 +261,11 @@ class Data_Preprocessing:
                                          Output: A pandas DataFrame after encoding Airline, destination, source
                                                  and total_stops feature.
                                          On Failure: Raise Exception
+
+
+                                         Written By: Abhishek Saha
+                                         Version: 1.0
+                                         Revisions: None
         """
 
         self.log.log(self.file_object,'Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started')
@@ -286,6 +332,11 @@ class Data_Preprocessing:
                                                   on the column pass as a parameter.
                                      Output: A pandas DataFrame after removing the specified columns.
                                      On Failure: Raise Exception
+
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
         """
 
         self.log.log(self.file_object,'Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column')

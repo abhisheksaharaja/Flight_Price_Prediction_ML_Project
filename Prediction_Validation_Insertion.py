@@ -17,7 +17,7 @@ class Predict_Validation:
         try:
             self.log.log(self.file_object, 'Start Raw Data Validation For Prediction Dataset')
 
-            # extracting values from schema
+            # extracting values from schema(Master Data Management)
             fileName,dateStamp, timestamp, colNumber, colName=self.raw_data.valueFromSchema()
 
             # getting the regex defined to validate filename
@@ -35,13 +35,13 @@ class Predict_Validation:
 
             self.log.log(self.file_object, 'Start Data Transformation')
 
-            # replacing blanks in the csv file with "Null" values to insert in table
+            # replacing blanks in the csv file with "Null" and also typecast all data into string datatype
             self.data_transform.Transformation()
             self.log.log(self.file_object, 'Completed Data Transformation')
 
             self.log.log(self.file_object, 'Database Operation Started')
 
-            # create database with given name, if present open the connection! Create table with columns given in schema
+            # Create table with given name with columns given in schema, if table present then open the table!
             self.dboperation.createTable('Prediction', colName)
             self.log.log(self.file_object, 'Table Created')
 
@@ -65,7 +65,7 @@ class Predict_Validation:
 
             self.log.log(self.file_object, 'Start moving Data from Database Table to CSV')
 
-            # export data from Database to csvfile
+            # export data from Database to csv file
             self.dboperation.tabletoCSV('Prediction')
             self.log.log(self.file_object, 'Successfully load data from Table to CSV')
             self.log.log(self.file_object, 'Database Operation Ended')

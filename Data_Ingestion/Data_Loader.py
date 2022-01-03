@@ -4,7 +4,10 @@ class LoadData:
 
     """
                  This class shall  be used for obtaining the data from the source for training.
-                 Revisions: None
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self,logger,file_object):
@@ -19,6 +22,11 @@ class LoadData:
                                             Description: This method reads the data from source for training.
                                             Output: A pandas DataFrame.
                                             On Failure: Raise Exception
+
+
+                                            Written By: Abhishek Saha
+                                            Version: 1.0
+                                            Revisions: None
         """
 
         try:

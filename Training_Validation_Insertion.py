@@ -36,19 +36,19 @@ class Training_Validation:
 
             self.logger.log(self.file_object, 'Start Data Transformation')
 
-            # replacing NaN in the csv file with "Null" and also typecast all data into string type values, to insert in table
+            # replacing NaN in the csv file with "Null" and also typecast all data into string datatype
             self.data_transform.Transformation()
             self.logger.log(self.file_object, 'End with Data Transformation Process')
 
             self.logger.log(self.file_object,'Database Operation Started')
 
-            # create database with given name, if present open the connection! Create table with columns given in schema
+            # Create table with given name with columns given in schema, if table present then open the table!
             self.DBOperation.createTable('Training',colname)
             self.logger.log(self.file_object, 'Table Created')
 
             self.logger.log(self.file_object, 'Data insertion into Table')
 
-            # insert csv files in the table
+            # insert csv files in the database relation
             self.DBOperation.InsertIntoDB('Training')
             self.logger.log(self.file_object, 'Data Successfully insert into Table')
 

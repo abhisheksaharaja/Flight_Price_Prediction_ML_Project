@@ -11,6 +11,10 @@ class DBOperation:
 
     """
           This class shall be used for handling all the SQL operations.
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self):
@@ -23,11 +27,16 @@ class DBOperation:
 
         """
                                       Method Name: dbconnection
-                                      Description: This method creates the database with the given name and if Database
-                                                   already exists then opens the connection and return the connection
-                                                   object.
+                                      Description: This method create the database with the given name and if
+                                                   Database already exists then opens the connection and return
+                                                   the connection object.
                                       Output: Connection to the DB
                                       On Failure: Raise ConnectionError
+
+
+                                      Written By: Abhishek Saha
+                                      Version: 1.0
+                                      Revisions: None
         """
 
         try:
@@ -43,7 +52,7 @@ class DBOperation:
             raise e
 
 
-    def createTable(self,databasename,colname):
+    def createTable(self, databasename, colname):
 
         """
                                         Method Name: createTable
@@ -51,6 +60,11 @@ class DBOperation:
                                                      to insert the Good data after raw data validation.
                                         Output: None
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         try:
@@ -87,10 +101,15 @@ class DBOperation:
 
         """
                                       Method Name: insertIntodb
-                                      Description: This method inserts the Good data files from the Good_Data Directory.
-                                                   into the above created table.
+                                      Description: This method inserts the Good data files from the Good_Data
+                                                   Directory into database table.
                                       Output: None
                                       On Failure: Raise Exception
+
+
+                                      Written By: Abhishek Saha
+                                      Version: 1.0
+                                      Revisions: None
         """
 
         good_data=self.good_data
@@ -123,7 +142,7 @@ class DBOperation:
             file_1 = open('Prediction_Log_Details/DBConnection_Log.txt', 'a+')
             file_2 = open('Prediction_Log_Details/InsertintoDB_Log.txt', 'a+')
             conn.rollback()
-            self.log.log(file_2, 'Error Occoured while data insert into table in insertIntodb method of DBOperation Class. Error Msg: '+str(e))
+            self.log.log(file_2, 'Error Occurred while data insert into table in insertIntodb method of DBOperation Class. Error Msg: '+str(e))
             shutil.move(good_data + "/" + file, bad_data)
             self.log.log(file_2, 'Bad data move into Bad data folder. Issue File Name'+str(file))
             conn.close()
@@ -141,6 +160,11 @@ class DBOperation:
                                                    into a CSV file in a given location.
                                       Output: None
                                       On Failure: Raise Exception
+
+
+                                      Written By: Abhishek Saha
+                                      Version: 1.0
+                                      Revisions: None
         """
 
         try:

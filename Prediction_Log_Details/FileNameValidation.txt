@@ -1,18 +1,12 @@
-2021-12-28 / 23:04:04	Enter in fileNameValidation method of Predict_Raw_Validation Class. Start File name validation
-2021-12-28 / 23:04:04	Valid File. File Name: FlightPrice_08012020_120212.csv
-2021-12-28 / 23:04:04	InValid File. File Name: FlightPrice_08012020_1212.csv
-2021-12-28 / 23:04:04	Valid File. File Name: FlightPrice_08012020_121220.csv
-2021-12-28 / 23:04:04	Valid File. File Name: FlightPrice_08012020_121234.csv
-2021-12-28 / 23:04:04	InValid File. File Name: FlightPrice_080120_121234.csv
-2021-12-28 / 23:06:25	Enter in fileNameValidation method of Predict_Raw_Validation Class. Start File name validation
-2021-12-28 / 23:06:25	Valid File. File Name: FlightPrice_08012020_120212.csv
-2021-12-28 / 23:06:25	InValid File. File Name: FlightPrice_08012020_1212.csv
-2021-12-28 / 23:06:25	Valid File. File Name: FlightPrice_08012020_121220.csv
-2021-12-28 / 23:06:25	Valid File. File Name: FlightPrice_08012020_121234.csv
-2021-12-28 / 23:06:25	InValid File. File Name: FlightPrice_080120_121234.csv
-2021-12-28 / 23:16:08	Enter in fileNameValidation method of Predict_Raw_Validation Class. Start File name validation
-2021-12-28 / 23:16:08	Valid File. File Name: FlightPrice_08012020_120212.csv
-2021-12-28 / 23:16:08	InValid File. File Name: FlightPrice_08012020_1212.csv
-2021-12-28 / 23:16:08	Valid File. File Name: FlightPrice_08012020_121220.csv
-2021-12-28 / 23:16:08	Valid File. File Name: FlightPrice_08012020_121234.csv
-2021-12-28 / 23:16:08	InValid File. File Name: FlightPrice_080120_121234.csv
+2022-01-04 / 02:13:51	Enter in fileNameValidation method of Predict_Raw_Validation Class. Start File name validation
+2022-01-04 / 02:13:51	Valid File. File Name: FlightPrice_08012020_120212.csv
+2022-01-04 / 02:13:51	InValid File. File Name: FlightPrice_08012020_1212.csv
+2022-01-04 / 02:13:51	Valid File. File Name: FlightPrice_08012020_121220.csv
+2022-01-04 / 02:13:51	Valid File. File Name: FlightPrice_08012020_121234.csv
+2022-01-04 / 02:13:51	InValid File. File Name: FlightPrice_080120_121234.csv
+2022-01-04 / 02:15:21	Enter in fileNameValidation method of Predict_Raw_Validation Class. Start File name validation
+2022-01-04 / 02:15:21	Valid File. File Name: FlightPrice_08012020_120212.csv
+2022-01-04 / 02:15:21	InValid File. File Name: FlightPrice_08012020_1212.csv
+2022-01-04 / 02:15:21	Valid File. File Name: FlightPrice_08012020_121220.csv
+2022-01-04 / 02:15:21	Valid File. File Name: FlightPrice_08012020_121234.csv
+2022-01-04 / 02:15:21	InValid File. File Name: FlightPrice_080120_121234.csv

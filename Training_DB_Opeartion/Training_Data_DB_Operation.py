@@ -10,6 +10,10 @@ class DBOperation:
 
     """
                This class shall be used for handling all the SQL operations.
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self):
@@ -18,15 +22,20 @@ class DBOperation:
         self.bad_data='Training_Raw_File_Validated/Bad_Data'
         self.logger=Log()
 
-    def createTable(self, Databasename,colname):
+    def createTable(self, Databasename, colname):
 
         """
                                         Method Name: createTable
-                                        Description: This method creates a table in the given database which
+                                        Description: This method create a table in the given database which
                                                      will be used to insert the Good data Directory after
                                                      raw data validation.
                                         Output: None
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         file_1 = open('Training_Log_Details/DBConnection.txt', 'a+')
@@ -37,7 +46,7 @@ class DBOperation:
             self.logger.log(file_1, 'Database Connected for createTable method')
             cur=conn.cursor()
             cur.execute("select count(name) from sqlite_master where type='table' and name='Good_Raw_Data'")
-            if cur.fetchone()[0]==1:
+            if cur.fetchone()[0] == 1:
                 conn.close()
                 self.logger.log(file_2, 'Table Already Created')
                 self.logger.log(file_1, 'Database Connection Closed')
@@ -65,11 +74,16 @@ class DBOperation:
 
         """
                                        Method Name: CreateConnection
-                                       Description: This method creates the database with the given name and
+                                       Description: This method create the database with the given database name and
                                                     if Database already exists then opens the connection to the DB
                                                     and return the connection object.
                                        Output: Connection to the DB
                                        On Failure: Raise ConnectionError
+
+
+                                       Written By: Abhishek Saha
+                                       Version: 1.0
+                                       Revisions: None
 
         """
 
@@ -93,6 +107,11 @@ class DBOperation:
                                                  Directory into Database.
                                     Output: None
                                     On Failure: Raise Exception
+
+
+                                    Written By: Abhishek Saha
+                                    Version: 1.0
+                                    Revisions: None
         """
 
         file1=open('Training_Log_Details/DbInsertion.txt','a+')
@@ -124,9 +143,9 @@ class DBOperation:
             file2.close()
         except Exception as e:
             conn.rollback()
-            self.logger.log(file1, 'Error Occoured while data insert into table in InsertIntoDB method of DBOperation Class. Error Msg: '+str(e))
+            self.logger.log(file1, 'Error Occurred while data insert into table in InsertIntoDB method of DBOperation Class. Error Msg: '+str(e))
             shutil.move(goodfile+"/"+file, badfile)
-            self.logger.log(file1, 'Bad data move into Bad data folder.Error Occoured while data insert into table in InsertIntoDB method of DBOperation Class. Error Msg: '+str(e))
+            self.logger.log(file1, 'Bad data move into Bad data folder.Error Occurred while data insert into table in InsertIntoDB method of DBOperation Class. Error Msg: '+str(e))
             conn.close()
             self.logger.log(file2, 'Database Connection Closed')
             file1.close()
@@ -137,10 +156,15 @@ class DBOperation:
 
         """
                                     Method Name: InsertIntoCSV
-                                    Description: This method fetch data from Good_Raw_Data table to a CSV
+                                    Description: This method fetch data from Good_Raw_Data table make into a CSV
                                                  file into a specified given location.
                                     Output: None
                                     On Failure: Raise Exception
+
+
+                                    Written By: Abhishek Saha
+                                    Version: 1.0
+                                    Revisions: None
         """
 
         self.FileFromDB='Training_File_From_DB/'

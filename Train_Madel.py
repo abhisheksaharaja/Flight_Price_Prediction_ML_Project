@@ -1,5 +1,9 @@
 """
             This is the Entry point for Training the Machine Learning Model.
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
 """
 # Doing the necessary imports
 
@@ -26,21 +30,21 @@ class TrainingMadel:
             data_load_obj=LoadData(self.log, self.file_object)
             data=data_load_obj.GetData()
 
-            # doing the data preprocessing
+            # Data preprocessing object Initialization
             Preprocess=Data_Preprocessing(self.log,self.file_object)
 
-            # remove all duplicate rows
+            # removing all duplicate rows
             data=Preprocess.RemoveDuplicateRow(data)
 
             # Separate features and label
             x,y=Preprocess.SeperateLabelFeature(data,'Price')
 
-            # check if missing values are present in the dataset also getting response and those columns have nullvalue
+            # Check if missing values are present in the dataset also getting response and those columns have null value
             IsNull, col_miss= Preprocess.IsNullPresent(x)
 
-            # if missing values are there, handling those missing values.
+            # If missing values are there, handling those missing values.
             if(IsNull):
-                x=Preprocess.ImputeMissingValue(x, col_miss)# missing value imputation
+                x=Preprocess.ImputeMissingValue(x, col_miss)
 
             # Separate date and month of Date_of_Journey feature
             x=Preprocess.DateOfJourneyFeatureFormat(x,'Date_of_Journey')
@@ -65,29 +69,29 @@ class TrainingMadel:
             # Applying the clustering approach
             Kmeans_obj=KMeansClustering(self.log,self.file_object) # object initialization.
 
-            # using the elbow plot to find the number of optimum clusters
+            # Using the elbow plot to find the number of optimum clusters
             no_cluster=Kmeans_obj.FindClusterNumber(x)
 
             # Divide the data into clusters
             x=Kmeans_obj.CreateCluster(x,no_cluster)
 
-            # create a new column in the dataset consist the label feature
+            # Create a new column in the dataset consist the label feature
             x['Labels']=y
 
-            # getting the unique clusters from our dataset
+            # Getting the unique clusters from our dataset
             lst_cluster=x['Cluster'].unique()
 
-            # parsing all the clusters and looking for the best ML algorithm to fit on individual cluster
+            # Parsing all the clusters and looking for the best ML algorithm to fit on individual cluster
             self.log.log(self.file_object, 'Start to Find Madel')
             for i in lst_cluster:
-                cluster_data=x[x['Cluster']==i] # filter the data for each cluster
+                cluster_data=x[x['Cluster']==i]  # filter the data for each cluster
 
                 # Prepare the feature and Label columns
                 cluster_feature=cluster_data.drop(['Cluster','Labels'],axis=1)
                 cluster_label=cluster_data['Labels']
 
-                # splitting the data into training and test set for each cluster one by one
-                x_train,x_test,y_train,y_test=train_test_split(cluster_feature,cluster_label, test_size=0.25)
+                # splitting the data into training and test set for each cluster one by one keep 25% as a test dataset
+                x_train,x_test,y_train,y_test=train_test_split(cluster_feature, cluster_label, test_size=0.25)
 
                 # object initialization
                 madel_finder=MadelTuner(self.log,self.file_object)

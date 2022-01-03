@@ -12,6 +12,10 @@ from Application_Logger.Logger import Log
 class Predict_Raw_Validation:
     """
                This class shall be used for handling all the validation done on the Raw Prediction Data!!.
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self,path):
@@ -23,18 +27,23 @@ class Predict_Raw_Validation:
 
         """
                                       Method Name: deletePredictFile
-                                      Description: This method deletes the Predicted outcome file from last run!
+                                      Description: This method deletes the Predicted outcome file generate
+                                                   from last run!
                                       Output: None
                                       On Failure: Raise OSError,Exception
+
+                                      Written By: Abhishek Saha
+                                      Version: 1.0
+                                      Revisions: None
         """
 
         try:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
-            self.log.log(file1,'Enter in deletePredictFile method of Predict_Raw_Validation Class. Start Deleteing existing Predicted Output file')
+            self.log.log(file1, 'Enter in deletePredictFile method of Predict_Raw_Validation Class. Start Deleteing existing Predicted Output file')
             path_1='Predicted_Output_File/Prediction.csv'
             if os.path.exists(path_1):
                 os.remove(path_1)
-            self.log.log(file1,'Deleted existing Predicted Output file. Exit from deletePredictFile method of Predict_Raw_Validation Class.')
+            self.log.log(file1, 'Deleted existing Predicted Output file. Exit from deletePredictFile method of Predict_Raw_Validation Class.')
             file1.close()
             return True
 
@@ -58,6 +67,11 @@ class Predict_Raw_Validation:
                                                     loaded in the DB,deleting the directory ensures space optimization.
                                       Output: None
                                       On Failure: Raise OSError,Exception
+
+
+                                      Written By: Abhishek Saha
+                                      Version: 1.0
+                                      Revisions: None
         """
 
         try:
@@ -88,6 +102,11 @@ class Predict_Raw_Validation:
                                                     Data, deleting the directory ensures space optimization.
                                       Output: None
                                       On Failure: Raise OSError,Exception
+
+
+                                      Written By: Abhishek Saha
+                                      Version: 1.0
+                                      Revisions: None
         """
 
         try:
@@ -118,6 +137,11 @@ class Predict_Raw_Validation:
                                                   and Bad Data after validating the prediction data.
                                      Output: None
                                      On Failure: Raise OSError, Exception
+
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
         """
 
         try:
@@ -146,7 +170,7 @@ class Predict_Raw_Validation:
             raise e
 
 
-    def fileNameValidation(self,regex,datestamplen, timestamplen):
+    def fileNameValidation(self, regex, datestamplen, timestamplen):
 
         """
                                          Method Name: fileNameValidation
@@ -156,6 +180,11 @@ class Predict_Raw_Validation:
                                                       the file is moved to Bad Data folder else in Good data.
                                          Output: None
                                          On Failure: Exception
+
+
+                                         Written By: Abhishek Saha
+                                         Version: 1.0
+                                         Revisions: None
         """
 
         self.deleteExistingGoodDataFolder()
@@ -207,6 +236,11 @@ class Predict_Raw_Validation:
                                                  Data for processing.
                                     Output: None
                                     On Failure: Raise Exception
+
+
+                                    Written By: Abhishek Saha
+                                    Version: 1.0
+                                    Revisions: None
         """
 
         try:
@@ -245,6 +279,11 @@ class Predict_Raw_Validation:
                                                       to bad data.
                                          Output: None
                                          On Failure: Exception
+
+
+                                         Written By: Abhishek Saha
+                                         Version: 1.0
+                                         Revisions: None
         """
 
         try:
@@ -285,6 +324,11 @@ class Predict_Raw_Validation:
                                                   client for invalid data issue.
                                      Output: None
                                      On Failure: Raise OSError, Exception
+
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
         """
 
         try:
@@ -339,6 +383,11 @@ class Predict_Raw_Validation:
                                                  pre-defined "schema_prediction" file.
                                     Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, Number of Columns, column_names
                                     On Failure: Raise ValueError,KeyError,Exception
+
+
+                                    Written By: Abhishek Saha
+                                    Version: 1.0
+                                    Revisions: None
         """
 
         try:
@@ -398,6 +447,11 @@ class Predict_Raw_Validation:
                                                  to validate the filename of the prediction data.
                                     Output: Regex pattern
                                     On Failure: None
+
+
+                                    Written By: Abhishek Saha
+                                    Version: 1.0
+                                    Revisions: None
         """
 
         regex="['FlightPrice']+['\_'']+[\d_]+[\d]+\.csv"

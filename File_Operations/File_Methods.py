@@ -10,6 +10,11 @@ class File_Operation:
     """
                 This class shall be used to save the model after training
                 and load the saved model for prediction.
+
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self,log,file_object):
@@ -24,6 +29,11 @@ class File_Operation:
                                         Description: Save the model file to directory
                                         Outcome: File gets saved
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         self.log.log(self.file_object,'Entered in Save_Madel method of the File_Operation class. To Save Madel')
@@ -47,9 +57,14 @@ class File_Operation:
 
         """
                                         Method Name: LoadMadel
-                                        Description: load the model file to memory
+                                        Description: Load the model from directory
                                         Output: The Model file loaded in memory
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         self.log.log(self.file_object,'Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.')
@@ -69,6 +84,11 @@ class File_Operation:
                                         Description: Select the correct model based on cluster number
                                         Output: The Model file
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         self.log.log(self.file_object,"Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster")

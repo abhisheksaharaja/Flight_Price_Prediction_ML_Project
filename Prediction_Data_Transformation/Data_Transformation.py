@@ -10,21 +10,30 @@ class Data_Transform:
     """
                       This class shall be used for transforming the Good Data Training Data before loading it in
                       Database!!.
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self):
         self.log=Log()
-        self.source='Prediction_Raw_File_Validated/Good_Data/'
+        self.source = 'Prediction_Raw_File_Validated/Good_Data/'
 
     def Transformation(self):
 
         """
                                         Method Name: Transformation
-                                        Description: This method replaces the missing values in columns with "NULL" to
-                                                     store in the table and typecast all data into string to store
-                                                     into Database.
+                                        Description: This method replaces the missing values in columns with "NULL"
+                                                     to store in the table and typecast all data into string to
+                                                     store into Database.
                                         Output: None
                                         On Failure: Raise Exception
+
+
+                                        Written By: Abhishek Saha
+                                        Version: 1.0
+                                        Revisions: None
         """
 
         try:

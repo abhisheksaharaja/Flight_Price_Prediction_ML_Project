@@ -1,3 +1,5 @@
+#doing all necessary imports
+
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from kneed import KneeLocator
@@ -7,7 +9,12 @@ from File_Operations.File_Methods import File_Operation
 class KMeansClustering:
 
     """
-                  This class shall  be used to divide the data into clusters before training.
+                  This class shall be used to divide the data into different clusters before training.
+
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self,log, file_object):
@@ -22,6 +29,11 @@ class KMeansClustering:
                                                  clusters to the file.
                                     Output: Getting number of cluster to divide the dataset.
                                     On Failure: Raise Exception
+
+
+                                    Written By: Abhishek Saha
+                                    Version: 1.0
+                                    Revisions: None
         """
 
         self.log.log(self.file_object,'Enter in PlotElbow method of KMeansClustering method. To Find Cluster number.')
@@ -54,6 +66,11 @@ class KMeansClustering:
                                     Description: Create a new dataframe consisting of the cluster information.
                                     Output: A dataframe with cluster column
                                     On Failure: Raise Exception
+
+
+                                    Written By: Abhishek Saha
+                                    Version: 1.0
+                                    Revisions: None
         """
 
         self.data = x
@@ -66,7 +83,7 @@ class KMeansClustering:
             msg=file_operation_obj.SaveMadel(self.kmeans,'kmeans')
 
             self.data['Cluster']=self.kmeans_cluster
-            self.log.log(self.file_object, 'Successfully Created '+str(cluster_number)+' number of Clsuer and Save madel'+str(msg)+'for CreateCluster method of KMeansClustering Class.')
+            self.log.log(self.file_object, 'Successfully Created '+str(cluster_number)+' number of Cluster and Save madel'+str(msg)+'for CreateCluster method of KMeansClustering Class.')
             self.log.log(self.file_object, 'Exit from CreateCluster method of KMeansClustering Class.')
             return self.data
 

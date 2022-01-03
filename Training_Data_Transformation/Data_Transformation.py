@@ -7,8 +7,11 @@ import pandas as pd
 class Data_Transform:
 
     """
-                     This class shall be used for transforming the Good Raw Training Data before loading
-                     it in Database!!.
+               This class shall be used for transforming the Good Raw Training Data before loading it in Database!!.
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
     """
 
     def __init__(self):
@@ -18,12 +21,17 @@ class Data_Transform:
     def Transformation(self):
 
         """
-                                      Method Name: data_transformation
+                                      Method Name: Transformation
                                       Description: This method replaces the missing values in columns with
                                                    "NULL" to store in the table and typecast all data into
-                                                    string to store into Database.
+                                                    string datatype.
                                       Output: None
                                       On Failure: Raise Exception
+
+
+                                     Written By: Abhishek Saha
+                                     Version: 1.0
+                                     Revisions: None
         """
 
         try:
