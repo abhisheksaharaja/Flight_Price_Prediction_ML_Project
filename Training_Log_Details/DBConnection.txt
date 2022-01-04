@@ -1,9 +1,9 @@
-2022-01-04 / 01:44:49	Start Database Connecting Process
-2022-01-04 / 01:44:49	Database Connected for createTable method
-2022-01-04 / 01:44:49	Database Connection Closed
-2022-01-04 / 01:44:49	Start Database Connecting Process
-2022-01-04 / 01:44:49	Database Connected for InsertIntoDB method
-2022-01-04 / 01:47:39	Database Connection Closed
-2022-01-04 / 01:47:39	Start Database Connecting Process
-2022-01-04 / 01:47:39	Database Connected for InsertIntoCSV method
-2022-01-04 / 01:47:39	Database Connection Closed.
+2022-01-04 / 16:56:46	Start Database Connecting Process
+2022-01-04 / 16:56:46	Database Connected for createTable method
+2022-01-04 / 16:56:47	Database Connection Closed
+2022-01-04 / 16:56:47	Start Database Connecting Process
+2022-01-04 / 16:56:47	Database Connected for InsertIntoDB method
+2022-01-04 / 17:00:14	Database Connection Closed
+2022-01-04 / 17:00:14	Start Database Connecting Process
+2022-01-04 / 17:00:14	Database Connected for InsertIntoCSV method
+2022-01-04 / 17:00:14	Database Connection Closed.

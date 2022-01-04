@@ -44,11 +44,11 @@ class KMeansClustering:
                 Kmeans.fit(x)
                 wcss.append(Kmeans.inertia_)
 
-            # plt.plot(range(1, 15), wcss)
+            # plt.plot(range(1, 20), wcss)
             # plt.title('Elbow Graph')
             # # plt.xlabel('Number of clusters')
             # plt.ylabel('WCSS')
-            # plt.savefig('Preprocessing_Training_Data/Elbow.PNG')
+            # plt.savefig('Data_Preprocessing/Elbow.PNG')
 
             self.kn = KneeLocator(range(1,20), wcss, curve='convex', direction='decreasing')
             self.log.log(self.file_object,'Optimum minimum Cluster: '+str(self.kn.knee))
