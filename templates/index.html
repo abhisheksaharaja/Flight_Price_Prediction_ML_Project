@@ -9,6 +9,15 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<style>
+
+		body {
+            background-repeat: no-repeat;
+            background-attached:fixed;
+            background-size:cover;
+            background-size: 1425px 555px;
+            background-image:  url({{url_for('static',filename='4_img.jpg')}})};
+        }
+
 		body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;}
 		h1,h2,h3,h4,h5,h6{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;}
 		.title{color:#273582;}
@@ -129,7 +138,7 @@
 					<br/>
 					<form method="post" id="datafetch_form" enctype="multipart/form-data">
 						<div class="form-group files color">
-							<input type="text" name = "csvfile" id="csvfile" class="form-control" placeholder="Enter absolute file path." required>
+							<input type="text"  name = "csvfile" id="csvfile" class="form-control" placeholder="Enter absolute file path." required>
 						</div>
 						<div class=""><button class="form-control btn-primary" id="customfile">Custom File Predict</button></div>
 						<br/><center><b>Or</b></center><br/>
@@ -142,11 +151,11 @@
 					<div class="result-box shadow rounded-lg">
 						<h6 class="title">Results</h6>
 						<div class="json-result">
-							
+
 						</div>
 					</div>
 				</div>
-			</div>						
+			</div>
 		</div>
 	</section>
 
@@ -167,8 +176,8 @@
 			</div>
 		</div>
 	</footer>
-	
-	
+
+
 	<div id="loading"><div class="loader"></div></div>
 	<!-- Bootstrap core JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -187,7 +196,7 @@
 					type: "POST",
 					data: {filepath:path},
 					success: function(response){
-						$(".json-result").html('<p>"Prediction File created at !!!Prediction_Output_File/Predictions.csvand few of the predictions are"</p><pre>' + response + '</pre>');	
+						$(".json-result").html('<p>"Prediction File created at !!!Prediction_Output_File/Predictions.csvand few of the predictions are"</p><pre>' + response + '</pre>');
 						$('#loading').hide();
 					}
 				});
@@ -206,10 +215,11 @@
 						$('#loading').hide();
 					}
 				});
-				
+
 			});
 		});
 	</script>
 </body>
 
 </html>
+

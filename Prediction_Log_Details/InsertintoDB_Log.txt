@@ -1,10 +1,28 @@
-2022-01-04 / 18:03:18	Enter in insertIntodb method of DBOperation Class. Start Data inserting into DataBase
-2022-01-04 / 18:03:35	File: FlightPrice_08012020_120212.csv Insert into Database
-2022-01-04 / 18:03:52	File: FlightPrice_08012020_121220.csv Insert into Database
-2022-01-04 / 18:04:09	File: FlightPrice_08012020_121234.csv Insert into Database
-2022-01-04 / 18:04:09	File insertion in Database done. Exit from insertIntodb method of DBOperation Class.
-2022-01-04 / 18:23:58	Enter in insertIntodb method of DBOperation Class. Start Data inserting into DataBase
-2022-01-04 / 18:24:26	File: FlightPrice_08012020_120212.csv Insert into Database
-2022-01-04 / 18:24:53	File: FlightPrice_08012020_121220.csv Insert into Database
-2022-01-04 / 18:25:21	File: FlightPrice_08012020_121234.csv Insert into Database
-2022-01-04 / 18:25:21	File insertion in Database done. Exit from insertIntodb method of DBOperation Class.
+2022-01-08 / 10:56:25	Enter in insertIntodb method of DBOperation Class. Start Data inserting into DataBase
+2022-01-08 / 10:56:44	File: FlightPrice_08012020_120212.csv Insert into Database
+2022-01-08 / 10:57:03	File: FlightPrice_08012020_121220.csv Insert into Database
+2022-01-08 / 10:57:22	File: FlightPrice_08012020_121234.csv Insert into Database
+2022-01-08 / 10:57:41	File: Flight_08012020_121234.csv Insert into Database
+2022-01-08 / 10:58:02	File: Price_08012020_121234.csv Insert into Database
+2022-01-08 / 10:58:02	File insertion in Database done. Exit from insertIntodb method of DBOperation Class.
+2022-01-08 / 10:59:11	Enter in insertIntodb method of DBOperation Class. Start Data inserting into DataBase
+2022-01-08 / 10:59:27	File: FlightPrice_08012020_120212.csv Insert into Database
+2022-01-08 / 10:59:40	File: FlightPrice_08012020_121220.csv Insert into Database
+2022-01-08 / 10:59:55	File: FlightPrice_08012020_121234.csv Insert into Database
+2022-01-08 / 11:00:09	File: Flight_08012020_121234.csv Insert into Database
+2022-01-08 / 11:00:25	File: Price_08012020_121234.csv Insert into Database
+2022-01-08 / 11:00:25	File insertion in Database done. Exit from insertIntodb method of DBOperation Class.
+2022-01-08 / 12:23:39	Enter in insertIntodb method of DBOperation Class. Start Data inserting into DataBase
+2022-01-08 / 12:23:51	File: FlightPrice_08012020_120212.csv Insert into Database
+2022-01-08 / 12:24:05	File: FlightPrice_08012020_121220.csv Insert into Database
+2022-01-08 / 12:24:18	File: FlightPrice_08012020_121234.csv Insert into Database
+2022-01-08 / 12:24:31	File: Flight_08012020_121234.csv Insert into Database
+2022-01-08 / 12:24:47	File: Price_08012020_121234.csv Insert into Database
+2022-01-08 / 12:24:47	File insertion in Database done. Exit from insertIntodb method of DBOperation Class.
+2022-01-08 / 12:27:37	Enter in insertIntodb method of DBOperation Class. Start Data inserting into DataBase
+2022-01-08 / 12:27:52	File: FlightPrice_08012020_120212.csv Insert into Database
+2022-01-08 / 12:28:05	File: FlightPrice_08012020_121220.csv Insert into Database
+2022-01-08 / 12:28:19	File: FlightPrice_08012020_121234.csv Insert into Database
+2022-01-08 / 12:28:32	File: Flight_08012020_121234.csv Insert into Database
+2022-01-08 / 12:28:45	File: Price_08012020_121234.csv Insert into Database
+2022-01-08 / 12:28:45	File insertion in Database done. Exit from insertIntodb method of DBOperation Class.

@@ -1,4 +1,8 @@
-2022-01-04 / 18:03:17	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
-2022-01-04 / 18:03:17	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
-2022-01-04 / 18:23:57	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
-2022-01-04 / 18:23:57	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
+2022-01-08 / 10:56:24	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2022-01-08 / 10:56:24	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
+2022-01-08 / 10:59:11	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2022-01-08 / 10:59:11	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
+2022-01-08 / 12:23:38	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2022-01-08 / 12:23:38	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class
+2022-01-08 / 12:27:36	Enter in colLengthValidation method of Predict_Raw_Validation Class. Column length validation started
+2022-01-08 / 12:27:36	Column length validation Completed. Exit from colLengthValidation method of Predict_Raw_Validation Class

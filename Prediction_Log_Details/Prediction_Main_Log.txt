@@ -1,32 +1,64 @@
-2022-01-04 / 18:03:17	Start Raw Data Validation For Prediction Dataset
-2022-01-04 / 18:03:17	Raw Data Validation Completed
-2022-01-04 / 18:03:17	Start Data Transformation
-2022-01-04 / 18:03:18	Completed Data Transformation
-2022-01-04 / 18:03:18	Database Operation Started
-2022-01-04 / 18:03:18	Table Created
-2022-01-04 / 18:03:18	Data insertion into Table
-2022-01-04 / 18:04:09	Data Successfully insert into Table
-2022-01-04 / 18:04:09	Deleting Existing Good Data Folder
-2022-01-04 / 18:04:09	Successfully Deleted Existing Good Data Folder
-2022-01-04 / 18:04:09	Start moving Bad Data Folder into Bad Data Archive Folder
-2022-01-04 / 18:04:09	Successfully move Bad Data Folder into Bad Data Archive Folder
-2022-01-04 / 18:04:09	Start moving Data from Database Table to CSV
-2022-01-04 / 18:04:10	Successfully load data from Table to CSV
-2022-01-04 / 18:04:10	Database Operation Ended
-2022-01-04 / 18:04:10	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
-2022-01-04 / 18:23:57	Start Raw Data Validation For Prediction Dataset
-2022-01-04 / 18:23:58	Raw Data Validation Completed
-2022-01-04 / 18:23:58	Start Data Transformation
-2022-01-04 / 18:23:58	Completed Data Transformation
-2022-01-04 / 18:23:58	Database Operation Started
-2022-01-04 / 18:23:58	Table Created
-2022-01-04 / 18:23:58	Data insertion into Table
-2022-01-04 / 18:25:21	Data Successfully insert into Table
-2022-01-04 / 18:25:21	Deleting Existing Good Data Folder
-2022-01-04 / 18:25:21	Successfully Deleted Existing Good Data Folder
-2022-01-04 / 18:25:21	Start moving Bad Data Folder into Bad Data Archive Folder
-2022-01-04 / 18:25:21	Successfully move Bad Data Folder into Bad Data Archive Folder
-2022-01-04 / 18:25:21	Start moving Data from Database Table to CSV
-2022-01-04 / 18:25:21	Successfully load data from Table to CSV
-2022-01-04 / 18:25:21	Database Operation Ended
-2022-01-04 / 18:25:21	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
+2022-01-08 / 10:56:24	Start Raw Data Validation For Prediction Dataset
+2022-01-08 / 10:56:25	Raw Data Validation Completed
+2022-01-08 / 10:56:25	Start Data Transformation
+2022-01-08 / 10:56:25	Completed Data Transformation
+2022-01-08 / 10:56:25	Database Operation Started
+2022-01-08 / 10:56:25	Table Created
+2022-01-08 / 10:56:25	Data insertion into Table
+2022-01-08 / 10:58:02	Data Successfully insert into Table
+2022-01-08 / 10:58:02	Deleting Existing Good Data Folder
+2022-01-08 / 10:58:02	Successfully Deleted Existing Good Data Folder
+2022-01-08 / 10:58:02	Start moving Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 10:58:02	Successfully move Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 10:58:02	Start moving Data from Database Table to CSV
+2022-01-08 / 10:58:02	Successfully load data from Table to CSV
+2022-01-08 / 10:58:02	Database Operation Ended
+2022-01-08 / 10:58:02	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
+2022-01-08 / 10:59:11	Start Raw Data Validation For Prediction Dataset
+2022-01-08 / 10:59:11	Raw Data Validation Completed
+2022-01-08 / 10:59:11	Start Data Transformation
+2022-01-08 / 10:59:11	Completed Data Transformation
+2022-01-08 / 10:59:11	Database Operation Started
+2022-01-08 / 10:59:11	Table Created
+2022-01-08 / 10:59:11	Data insertion into Table
+2022-01-08 / 11:00:25	Data Successfully insert into Table
+2022-01-08 / 11:00:25	Deleting Existing Good Data Folder
+2022-01-08 / 11:00:25	Successfully Deleted Existing Good Data Folder
+2022-01-08 / 11:00:25	Start moving Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 11:00:25	Successfully move Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 11:00:25	Start moving Data from Database Table to CSV
+2022-01-08 / 11:00:26	Successfully load data from Table to CSV
+2022-01-08 / 11:00:26	Database Operation Ended
+2022-01-08 / 11:00:26	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
+2022-01-08 / 12:23:38	Start Raw Data Validation For Prediction Dataset
+2022-01-08 / 12:23:38	Raw Data Validation Completed
+2022-01-08 / 12:23:38	Start Data Transformation
+2022-01-08 / 12:23:39	Completed Data Transformation
+2022-01-08 / 12:23:39	Database Operation Started
+2022-01-08 / 12:23:39	Table Created
+2022-01-08 / 12:23:39	Data insertion into Table
+2022-01-08 / 12:24:47	Data Successfully insert into Table
+2022-01-08 / 12:24:47	Deleting Existing Good Data Folder
+2022-01-08 / 12:24:47	Successfully Deleted Existing Good Data Folder
+2022-01-08 / 12:24:47	Start moving Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 12:24:47	Successfully move Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 12:24:47	Start moving Data from Database Table to CSV
+2022-01-08 / 12:24:48	Successfully load data from Table to CSV
+2022-01-08 / 12:24:48	Database Operation Ended
+2022-01-08 / 12:24:48	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
+2022-01-08 / 12:27:36	Start Raw Data Validation For Prediction Dataset
+2022-01-08 / 12:27:36	Raw Data Validation Completed
+2022-01-08 / 12:27:36	Start Data Transformation
+2022-01-08 / 12:27:37	Completed Data Transformation
+2022-01-08 / 12:27:37	Database Operation Started
+2022-01-08 / 12:27:37	Table Created
+2022-01-08 / 12:27:37	Data insertion into Table
+2022-01-08 / 12:28:45	Data Successfully insert into Table
+2022-01-08 / 12:28:45	Deleting Existing Good Data Folder
+2022-01-08 / 12:28:45	Successfully Deleted Existing Good Data Folder
+2022-01-08 / 12:28:45	Start moving Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 12:28:45	Successfully move Bad Data Folder into Bad Data Archive Folder
+2022-01-08 / 12:28:45	Start moving Data from Database Table to CSV
+2022-01-08 / 12:28:45	Successfully load data from Table to CSV
+2022-01-08 / 12:28:45	Database Operation Ended
+2022-01-08 / 12:28:45	End Raw Data Validation For Prediction Dataset. Exit from Prediction method of Predict_Validation Class
