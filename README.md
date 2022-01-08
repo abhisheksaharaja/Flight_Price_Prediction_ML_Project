@@ -128,7 +128,7 @@ In This step, we perform different sets of validation on the given set of traini
 - Find best Madel:
         Depend on Cluster number we find the best model for each cluster. By using 2  algorithms “RandomForestRegressor” and "XGBoost". 
         For each cluster both the hyper tunned algorithms are used.       
-        ![madel](https://user-images.githubusercontent.com/76595524/148069194-fdf1de5e-4f2a-436c-a4f9-3fb422941de3.jpg)
+        ![s4](https://user-images.githubusercontent.com/76595524/148635136-66fea425-b690-4087-95c4-2020b7804c87.jpg)
         
    
 - Predition:
