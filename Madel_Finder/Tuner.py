@@ -155,7 +155,7 @@ class MadelTuner:
                                         Version: 1.0
                                         Revisions: None
         """
-        self.log.log(self.file_object,'Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.')
+        self.log.log(self.file_object,'Entered in find_best_madel method of MadelTuner Class. To find best madel after comparison.')
         try:
 
             # create best model for Random Forest

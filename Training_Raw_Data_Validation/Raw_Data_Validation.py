@@ -173,8 +173,8 @@ class Raw_Validation:
         """
 
         file=open('Training_Log_Details/General_Log.txt', 'a+')
-        path_1=os.path.join('Training_Raw_File_Validated/', 'Bad_Data/')
-        path_2= os.path.join('Training_Raw_File_Validated/', 'Good_Data/')
+        path_1=os.path.join('Training_Raw_File_Validated', 'Bad_Data')
+        path_2= os.path.join('Training_Raw_File_Validated', 'Good_Data')
         try:
             self.Log.log(file, 'Enter in CreateGoodBadData method of Raw_Validation Class. Start Creating Good and Bad Data Folder')
             if not os.path.isdir(path_1):

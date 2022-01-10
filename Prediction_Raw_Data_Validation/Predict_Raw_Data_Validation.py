@@ -147,8 +147,8 @@ class Predict_Raw_Validation:
         try:
             file1 = open('Prediction_Log_Details/General_Log.txt', 'a+')
             self.log.log(file1, 'Enter in createGoodBadDataFolder method of Predict_Raw_Validation Class. Start Creating Good and Bad Data Folder')
-            path_2 = os.path.join('Prediction_Raw_File_Validated/', 'Bad_Data/')
-            path_1 = os.path.join('Prediction_Raw_File_Validated/', 'Good_Data/')
+            path_2 = os.path.join('Prediction_Raw_File_Validated', 'Bad_Data')
+            path_1 = os.path.join('Prediction_Raw_File_Validated', 'Good_Data')
             if not os.path.isdir(path_1):
                 os.mkdir(path_1)
                 self.log.log(file1, 'Created Good Data Folder')

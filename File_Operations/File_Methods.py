@@ -20,7 +20,7 @@ class File_Operation:
     def __init__(self,log,file_object):
         self.log=log
         self.file_object=file_object
-        self.Madel_base_path='Madel/'
+        self.Madel_base_path='Madel'
 
     def SaveMadel(self,madel,filename):
 
