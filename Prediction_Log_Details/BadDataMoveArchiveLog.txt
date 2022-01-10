@@ -6,3 +6,11 @@
 2022-01-08 / 12:24:47	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
 2022-01-08 / 12:28:45	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
 2022-01-08 / 12:28:45	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2022-01-10 / 18:06:33	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2022-01-10 / 18:06:33	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2022-01-10 / 18:28:17	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2022-01-10 / 18:28:17	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2022-01-10 / 18:31:11	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2022-01-10 / 18:31:11	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class
+2022-01-10 / 18:34:09	Enter in badDataArchiveFolder method of Predict_Raw_Validation Class. Start moving file from Bad folder to Archive folder.
+2022-01-10 / 18:34:09	Complete moving file from Bad folder to Archive folder. Exit from badDataArchiveFolder method of Predict_Raw_Validation Class

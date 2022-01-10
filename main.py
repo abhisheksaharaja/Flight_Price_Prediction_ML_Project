@@ -44,7 +44,7 @@ def PredictClient():
 
             # predicting for dataset in CSV format by train madel
             predict_path, json_predictions=pred.madelPrediction()
-            return Response("Prediction File created at !!!" + str(predict_path) + 'and few of the predictions are ' + str(json.loads(json_predictions)))
+            return Response("Prediction File created at !!!" + str(predict_path) + ' and few of the predictions are ' + str(json.loads(json_predictions)))
 
         elif request.json is not None:
             path=request.json['filepath']
@@ -60,14 +60,14 @@ def PredictClient():
 
             # predicting for dataset in CSV format by train madel
             predict_path, json_predictions=pred.madelPrediction()
-            return Response("Prediction File created at !!!" + str(predict_path) + 'and few of the predictions are ' + str(json.loads(json_predictions)))
+            return Response("Prediction File created at !!!" + str(predict_path) + ' and few of the predictions are ' + str(json.loads(json_predictions)))
 
         else:
             print('Nothing Matched')
-    except ValueError:
-        return Response('Error Occurred! ValueError')
-    except KeyError:
-        return Response('Error Occurred! KeyError')
+    except ValueError as e:
+        return Response('Error Occurred! ValueError '+str(e))
+    except KeyError as e:
+        return Response('Error Occurred! KeyError '+str(e))
     except Exception as e:
         return Response('Error Occurred!! Exception'+str(e))
 
@@ -92,12 +92,12 @@ def trainRouteClient():
             # training the model for dataset in CSV
             train_Madel_obj.MadelTraining()
 
-    except ValueError:
-        return Response('Error Occurred ValueError')
-    except KeyError:
-        return Response('Error Occurred KeyError')
-    except Exception:
-        return Response('Error Occurred Exception')
+    except ValueError as e:
+        return Response('Error Occurred ValueError '+str(e))
+    except KeyError as e:
+        return Response('Error Occurred KeyError '+str(e))
+    except Exception as e:
+        return Response('Error Occurred Exception  '+str(e))
     return Response('Training Successful')
 
 

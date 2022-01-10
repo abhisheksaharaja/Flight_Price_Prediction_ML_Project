@@ -230,3 +230,235 @@
 2022-01-08 / 12:28:47	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
 2022-01-08 / 12:28:47	Madel Xgb_Madel0 loaded Successfully
 2022-01-08 / 12:28:47	End of Prediction. Exit from madelPrediction method of PredictionMadel Class
+2022-01-10 / 18:06:33	Deleted last Predicted output file
+2022-01-10 / 18:06:33	Start Prediction
+2022-01-10 / 18:06:33	Enter in GetData method of PredictLoadData Class.
+2022-01-10 / 18:06:33	Data Loaded Successfully. Exit from GetData method of PredictLoadData Class.
+2022-01-10 / 18:06:33	Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows
+2022-01-10 / 18:06:33	Duplicate Rows: 7938
+2022-01-10 / 18:06:33	Remove Duplicate Rows. File Contain only unique Rows. Exit from RemoveDuplicateRow method of Data_Preprocessing Class
+2022-01-10 / 18:06:33	Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values
+2022-01-10 / 18:06:33	Finding missing values is a success.Data written to the null values file. Exit from IsNullPresent method of Data_Preprocessing Class
+2022-01-10 / 18:06:33	Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature
+2022-01-10 / 18:06:33	Successfully impute Date of Journey Feature also create two new feature to store day and month seperately. Exit from DateOfJourneyFeatureFormat method of Data_Preprocessing Class
+2022-01-10 / 18:06:33	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:06:33	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:06:33	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:06:33	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:06:33	Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting
+2022-01-10 / 18:06:33	Successfully Completed Duration Feature Formatting. Exit from TimeFeatureFormat_1 method of Data_Preprocessing Class.
+2022-01-10 / 18:06:33	Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started
+2022-01-10 / 18:06:34	Airline Encoding done Successfully
+2022-01-10 / 18:06:34	Source Encoding done Successfully
+2022-01-10 / 18:06:34	Destination Encoding done Successfully
+2022-01-10 / 18:06:34	Total_Stops Encoding done Successfully
+2022-01-10 / 18:06:34	Encoding Completed. Exit from LabelEncoding method of Data_Preprocessing Class.
+2022-01-10 / 18:06:34	Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column
+2022-01-10 / 18:06:34	Drop Column: Date_of_Journey
+2022-01-10 / 18:06:34	Drop Column: Route
+2022-01-10 / 18:06:34	Drop Column: Dep_Time
+2022-01-10 / 18:06:34	Drop Column: Arrival_Time
+2022-01-10 / 18:06:34	Drop Column: Duration
+2022-01-10 / 18:06:34	Drop Column: Additional_Info
+2022-01-10 / 18:06:34	Successfully Drop column
+2022-01-10 / 18:06:34	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:06:34	Madel kmeans loaded Successfully
+2022-01-10 / 18:06:34	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:06:34	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:06:34	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:06:34	Madel Xgb_Madel1 loaded Successfully
+2022-01-10 / 18:06:36	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:06:36	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:06:36	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:06:36	Madel Xgb_Madel4 loaded Successfully
+2022-01-10 / 18:06:36	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:06:36	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:06:36	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:06:36	Madel Random_Forest_Madel3 loaded Successfully
+2022-01-10 / 18:06:37	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:06:37	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:06:37	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:06:37	Madel Xgb_Madel5 loaded Successfully
+2022-01-10 / 18:06:37	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:06:37	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:06:37	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:06:37	Madel Random_Forest_Madel2 loaded Successfully
+2022-01-10 / 18:06:37	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:06:37	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:06:37	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:06:37	Madel Xgb_Madel0 loaded Successfully
+2022-01-10 / 18:06:37	End of Prediction. Exit from madelPrediction method of PredictionMadel Class
+2022-01-10 / 18:28:17	Deleted last Predicted output file
+2022-01-10 / 18:28:17	Start Prediction
+2022-01-10 / 18:28:17	Enter in GetData method of PredictLoadData Class.
+2022-01-10 / 18:28:17	Data Loaded Successfully. Exit from GetData method of PredictLoadData Class.
+2022-01-10 / 18:28:17	Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows
+2022-01-10 / 18:28:17	Duplicate Rows: 7938
+2022-01-10 / 18:28:17	Remove Duplicate Rows. File Contain only unique Rows. Exit from RemoveDuplicateRow method of Data_Preprocessing Class
+2022-01-10 / 18:28:17	Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values
+2022-01-10 / 18:28:17	Finding missing values is a success.Data written to the null values file. Exit from IsNullPresent method of Data_Preprocessing Class
+2022-01-10 / 18:28:17	Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature
+2022-01-10 / 18:28:17	Successfully impute Date of Journey Feature also create two new feature to store day and month seperately. Exit from DateOfJourneyFeatureFormat method of Data_Preprocessing Class
+2022-01-10 / 18:28:17	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:28:17	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:28:17	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:28:17	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:28:17	Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting
+2022-01-10 / 18:28:17	Successfully Completed Duration Feature Formatting. Exit from TimeFeatureFormat_1 method of Data_Preprocessing Class.
+2022-01-10 / 18:28:17	Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started
+2022-01-10 / 18:28:18	Airline Encoding done Successfully
+2022-01-10 / 18:28:18	Source Encoding done Successfully
+2022-01-10 / 18:28:18	Destination Encoding done Successfully
+2022-01-10 / 18:28:18	Total_Stops Encoding done Successfully
+2022-01-10 / 18:28:18	Encoding Completed. Exit from LabelEncoding method of Data_Preprocessing Class.
+2022-01-10 / 18:28:18	Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column
+2022-01-10 / 18:28:18	Drop Column: Date_of_Journey
+2022-01-10 / 18:28:18	Drop Column: Route
+2022-01-10 / 18:28:18	Drop Column: Dep_Time
+2022-01-10 / 18:28:18	Drop Column: Arrival_Time
+2022-01-10 / 18:28:18	Drop Column: Duration
+2022-01-10 / 18:28:18	Drop Column: Additional_Info
+2022-01-10 / 18:28:18	Successfully Drop column
+2022-01-10 / 18:28:18	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:28:18	Madel kmeans loaded Successfully
+2022-01-10 / 18:28:18	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:28:18	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:28:18	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:28:18	Madel Xgb_Madel1 loaded Successfully
+2022-01-10 / 18:28:19	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:28:19	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:28:19	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:28:19	Madel Xgb_Madel4 loaded Successfully
+2022-01-10 / 18:28:20	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:28:20	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:28:20	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:28:20	Madel Random_Forest_Madel3 loaded Successfully
+2022-01-10 / 18:28:20	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:28:20	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:28:20	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:28:20	Madel Xgb_Madel5 loaded Successfully
+2022-01-10 / 18:28:20	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:28:20	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:28:20	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:28:20	Madel Random_Forest_Madel2 loaded Successfully
+2022-01-10 / 18:28:20	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:28:20	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:28:20	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:28:20	Madel Xgb_Madel0 loaded Successfully
+2022-01-10 / 18:28:21	End of Prediction. Exit from madelPrediction method of PredictionMadel Class
+2022-01-10 / 18:31:11	Deleted last Predicted output file
+2022-01-10 / 18:31:11	Start Prediction
+2022-01-10 / 18:31:11	Enter in GetData method of PredictLoadData Class.
+2022-01-10 / 18:31:11	Data Loaded Successfully. Exit from GetData method of PredictLoadData Class.
+2022-01-10 / 18:31:11	Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows
+2022-01-10 / 18:31:11	Duplicate Rows: 7938
+2022-01-10 / 18:31:11	Remove Duplicate Rows. File Contain only unique Rows. Exit from RemoveDuplicateRow method of Data_Preprocessing Class
+2022-01-10 / 18:31:11	Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values
+2022-01-10 / 18:31:11	Finding missing values is a success.Data written to the null values file. Exit from IsNullPresent method of Data_Preprocessing Class
+2022-01-10 / 18:31:11	Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature
+2022-01-10 / 18:31:11	Successfully impute Date of Journey Feature also create two new feature to store day and month seperately. Exit from DateOfJourneyFeatureFormat method of Data_Preprocessing Class
+2022-01-10 / 18:31:11	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:31:11	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:31:11	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:31:11	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:31:11	Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting
+2022-01-10 / 18:31:11	Successfully Completed Duration Feature Formatting. Exit from TimeFeatureFormat_1 method of Data_Preprocessing Class.
+2022-01-10 / 18:31:11	Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started
+2022-01-10 / 18:31:12	Airline Encoding done Successfully
+2022-01-10 / 18:31:12	Source Encoding done Successfully
+2022-01-10 / 18:31:12	Destination Encoding done Successfully
+2022-01-10 / 18:31:12	Total_Stops Encoding done Successfully
+2022-01-10 / 18:31:12	Encoding Completed. Exit from LabelEncoding method of Data_Preprocessing Class.
+2022-01-10 / 18:31:12	Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column
+2022-01-10 / 18:31:12	Drop Column: Date_of_Journey
+2022-01-10 / 18:31:12	Drop Column: Route
+2022-01-10 / 18:31:12	Drop Column: Dep_Time
+2022-01-10 / 18:31:12	Drop Column: Arrival_Time
+2022-01-10 / 18:31:12	Drop Column: Duration
+2022-01-10 / 18:31:12	Drop Column: Additional_Info
+2022-01-10 / 18:31:12	Successfully Drop column
+2022-01-10 / 18:31:12	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:31:12	Madel kmeans loaded Successfully
+2022-01-10 / 18:31:12	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:31:12	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:31:12	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:31:12	Madel Xgb_Madel1 loaded Successfully
+2022-01-10 / 18:31:13	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:31:13	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:31:13	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:31:13	Madel Xgb_Madel4 loaded Successfully
+2022-01-10 / 18:31:14	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:31:14	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:31:14	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:31:14	Madel Random_Forest_Madel3 loaded Successfully
+2022-01-10 / 18:31:14	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:31:14	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:31:14	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:31:14	Madel Xgb_Madel5 loaded Successfully
+2022-01-10 / 18:31:14	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:31:14	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:31:14	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:31:14	Madel Random_Forest_Madel2 loaded Successfully
+2022-01-10 / 18:31:14	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:31:14	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:31:14	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:31:14	Madel Xgb_Madel0 loaded Successfully
+2022-01-10 / 18:31:15	End of Prediction. Exit from madelPrediction method of PredictionMadel Class
+2022-01-10 / 18:34:09	Deleted last Predicted output file
+2022-01-10 / 18:34:09	Start Prediction
+2022-01-10 / 18:34:09	Enter in GetData method of PredictLoadData Class.
+2022-01-10 / 18:34:09	Data Loaded Successfully. Exit from GetData method of PredictLoadData Class.
+2022-01-10 / 18:34:09	Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows
+2022-01-10 / 18:34:09	Duplicate Rows: 7938
+2022-01-10 / 18:34:09	Remove Duplicate Rows. File Contain only unique Rows. Exit from RemoveDuplicateRow method of Data_Preprocessing Class
+2022-01-10 / 18:34:09	Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values
+2022-01-10 / 18:34:09	Finding missing values is a success.Data written to the null values file. Exit from IsNullPresent method of Data_Preprocessing Class
+2022-01-10 / 18:34:09	Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature
+2022-01-10 / 18:34:09	Successfully impute Date of Journey Feature also create two new feature to store day and month seperately. Exit from DateOfJourneyFeatureFormat method of Data_Preprocessing Class
+2022-01-10 / 18:34:09	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:34:09	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:34:09	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-10 / 18:34:09	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-10 / 18:34:09	Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting
+2022-01-10 / 18:34:09	Successfully Completed Duration Feature Formatting. Exit from TimeFeatureFormat_1 method of Data_Preprocessing Class.
+2022-01-10 / 18:34:09	Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started
+2022-01-10 / 18:34:10	Airline Encoding done Successfully
+2022-01-10 / 18:34:10	Source Encoding done Successfully
+2022-01-10 / 18:34:10	Destination Encoding done Successfully
+2022-01-10 / 18:34:10	Total_Stops Encoding done Successfully
+2022-01-10 / 18:34:10	Encoding Completed. Exit from LabelEncoding method of Data_Preprocessing Class.
+2022-01-10 / 18:34:10	Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column
+2022-01-10 / 18:34:10	Drop Column: Date_of_Journey
+2022-01-10 / 18:34:10	Drop Column: Route
+2022-01-10 / 18:34:10	Drop Column: Dep_Time
+2022-01-10 / 18:34:10	Drop Column: Arrival_Time
+2022-01-10 / 18:34:10	Drop Column: Duration
+2022-01-10 / 18:34:10	Drop Column: Additional_Info
+2022-01-10 / 18:34:10	Successfully Drop column
+2022-01-10 / 18:34:10	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:34:10	Madel kmeans loaded Successfully
+2022-01-10 / 18:34:10	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:34:10	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:34:10	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:34:10	Madel Xgb_Madel1 loaded Successfully
+2022-01-10 / 18:34:11	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:34:11	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:34:11	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:34:11	Madel Xgb_Madel4 loaded Successfully
+2022-01-10 / 18:34:12	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:34:12	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:34:12	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:34:12	Madel Random_Forest_Madel3 loaded Successfully
+2022-01-10 / 18:34:12	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:34:12	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:34:12	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:34:12	Madel Xgb_Madel5 loaded Successfully
+2022-01-10 / 18:34:12	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:34:12	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:34:12	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:34:12	Madel Random_Forest_Madel2 loaded Successfully
+2022-01-10 / 18:34:13	Entered in FindCorrectMadel method of the File_Operation class. To Find a Madel corrosponding the specfic Cluster
+2022-01-10 / 18:34:13	Get the Correct Madel based on Cluster Number. Exit from FindCorrectMadel method of File_Operation Class
+2022-01-10 / 18:34:13	Entered in LoadMadel method of the File_Operation class. To load Madel for Prediction.
+2022-01-10 / 18:34:13	Madel Xgb_Madel0 loaded Successfully
+2022-01-10 / 18:34:13	End of Prediction. Exit from madelPrediction method of PredictionMadel Class

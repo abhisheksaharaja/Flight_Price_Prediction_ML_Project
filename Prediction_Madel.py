@@ -90,8 +90,8 @@ class predictionMadel:
             lst_cluster=x['cluster'].unique()
 
             #Check output directory present or not if alredy created ignore the block of code or create the directory
-            if not os.path.isdir('Predicted_Output_File'):
-                os.mkdir('Predicted_Output_File')
+            if not os.path.isdir('Prediction_Output_File'):
+                os.mkdir('Prediction_Output_File')
 
             # Parsing all the clusters and looking for the Existing ML Madel to predict the outcome and store result in CSV format in Predicted_Output_File Directory
             for i in lst_cluster:
@@ -112,10 +112,10 @@ class predictionMadel:
 
                 # Create a Dataframe
                 result=pd.DataFrame(result, columns=['Predicted_Flight_Price'])
-                path='Predicted_Output_File/Prediction.csv'
+                path='Prediction_Output_File/Predictions.csv'
 
                 # Store the predicted outcome into CSV format
-                result.to_csv('Predicted_Output_File/Prediction.csv', header=True, mode='a+')
+                result.to_csv('Prediction_Output_File/Predictions.csv', header=True, mode='a+')
             self.log.log(self.file_object, 'End of Prediction. Exit from madelPrediction method of PredictionMadel Class')
             return path, result.head().to_json(orient="records")
 
