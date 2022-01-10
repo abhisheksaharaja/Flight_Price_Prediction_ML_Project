@@ -68,8 +68,8 @@ def PredictClient():
         return Response('Error Occurred! ValueError')
     except KeyError:
         return Response('Error Occurred! KeyError')
-    except Exception:
-        return Response('Error Occurred!! Exception')
+    except Exception as e:
+        return Response('Error Occurred!! Exception'+str(e))
 
 
 @app.route("/train", methods=['GET', 'POST'])
