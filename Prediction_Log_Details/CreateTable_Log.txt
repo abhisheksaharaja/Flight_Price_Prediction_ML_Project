@@ -22,3 +22,6 @@
 2022-01-10 / 18:32:24	Enter in createTable method of DBOperation Class. Start Table Creation
 2022-01-10 / 18:32:24	Drop existing table
 2022-01-10 / 18:32:24	New Table Created Successfully. Exit from createTable method of DBOperation Class
+2022-01-11 / 17:06:01	Enter in createTable method of DBOperation Class. Start Table Creation
+2022-01-11 / 17:06:01	Drop existing table
+2022-01-11 / 17:06:01	New Table Created Successfully. Exit from createTable method of DBOperation Class

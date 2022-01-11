@@ -70,3 +70,12 @@
 2022-01-10 / 18:34:09	Start Database Connectivity.
 2022-01-10 / 18:34:09	Database Connected Successfully for tabletoCSV method
 2022-01-10 / 18:34:09	Database Connection Closed
+2022-01-11 / 17:06:01	Start Database Connectivity.
+2022-01-11 / 17:06:01	Database connected Successfully for createTable method of DBOperation Class
+2022-01-11 / 17:06:01	Database connection Closed Successfully
+2022-01-11 / 17:06:01	Start Database Connectivity.
+2022-01-11 / 17:06:01	Database connected Successfully for insertIntodb method
+2022-01-11 / 17:08:29	Database connection Closed
+2022-01-11 / 17:08:29	Start Database Connectivity.
+2022-01-11 / 17:08:29	Database Connected Successfully for tabletoCSV method
+2022-01-11 / 17:08:29	Database Connection Closed

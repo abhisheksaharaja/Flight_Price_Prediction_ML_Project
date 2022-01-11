@@ -14,3 +14,5 @@
 2022-01-10 / 18:31:11	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
 2022-01-10 / 18:34:09	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
 2022-01-10 / 18:34:09	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class
+2022-01-11 / 17:08:29	Enter in tabletoCSV method of DBOperation Class. Start Data load into CSV file
+2022-01-11 / 17:08:29	Successfully load into CSV file. Exit from tabletoCSV method of DBOperation Class

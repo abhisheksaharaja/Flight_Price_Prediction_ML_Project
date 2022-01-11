@@ -22,3 +22,6 @@
 2022-01-10 / 18:32:24	Enter in valueFromSchema method of Predict_Raw_Validation Class. Start getting Details from Schema
 2022-01-10 / 18:32:24	Successfully read schema details
 2022-01-10 / 18:32:24	Successfully Get Value from Schema. Exit from Enter into valueFromSchema method of Predict_Raw_Validation Class
+2022-01-11 / 17:06:00	Enter in valueFromSchema method of Predict_Raw_Validation Class. Start getting Details from Schema
+2022-01-11 / 17:06:00	Successfully read schema details
+2022-01-11 / 17:06:00	Successfully Get Value from Schema. Exit from Enter into valueFromSchema method of Predict_Raw_Validation Class
