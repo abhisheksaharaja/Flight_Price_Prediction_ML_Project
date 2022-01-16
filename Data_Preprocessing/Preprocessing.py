@@ -270,7 +270,7 @@ class Data_Preprocessing:
 
         self.log.log(self.file_object,'Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started')
         try:
-            sns.countplot(y='Airline', data=x)
+            sns.countplot(x='Airline', data=x)
             plt.ylabel('Airline')
             plt.savefig('Preprocessing_Training_Data/Airline_Count_Plot.PNG')
             # plt.title('')
@@ -283,7 +283,7 @@ class Data_Preprocessing:
             x['Airline'] = x['Airline'].map(Label_1)
             self.log.log(self.file_object, 'Airline Encoding done Successfully')
 
-            sns.countplot(y='Source', data=x)
+            sns.countplot(x='Source', data=x)
             plt.ylabel('Source')
             plt.savefig('Preprocessing_Training_Data/Source_Count_Plot.PNG')
             # plt.title('')
@@ -293,7 +293,7 @@ class Data_Preprocessing:
             x['Source'] = x['Source'].map(Label_2)
             self.log.log(self.file_object, 'Source Encoding done Successfully')
 
-            sns.countplot(y='Destination', data=x)
+            sns.countplot(x='Destination', data=x)
             plt.ylabel('Destination')
             plt.savefig('Preprocessing_Training_Data/Destination_Count_Plot.PNG')
             # plt.title('')
@@ -308,7 +308,7 @@ class Data_Preprocessing:
             # labels = ['non-stop', '2 stops', '1 stop', '3 stops', '4 stops']
             # plt.pie(x['Total_Stops'].value_counts(), autopct='%1.1f%%', shadow=True, explode=explode,
             #         labels=labels)
-            sns.countplot(y='Total_Stops', data=x)
+            sns.countplot(x='Total_Stops', data=x)
             plt.ylabel('Total_Stops')
             plt.savefig('Preprocessing_Training_Data/Total_Stops_Count_Plot.PNG')
             Label_4 = {

@@ -1,4 +1,2 @@
-2022-01-08 / 10:11:47	Enter in InsertIntoCSV method of DBOperation Class. Start Data load into CSV file
-2022-01-08 / 10:11:47	Successfully data load into CSV file. Exit from InsertIntoCSV method of DBOperation Class.
-2022-01-08 / 11:33:23	Enter in InsertIntoCSV method of DBOperation Class. Start Data load into CSV file
-2022-01-08 / 11:33:24	Successfully data load into CSV file. Exit from InsertIntoCSV method of DBOperation Class.
+2022-01-16 / 20:13:29	Enter in InsertIntoCSV method of DBOperation Class. Start Data load into CSV file
+2022-01-16 / 20:13:29	Successfully data load into CSV file. Exit from InsertIntoCSV method of DBOperation Class.

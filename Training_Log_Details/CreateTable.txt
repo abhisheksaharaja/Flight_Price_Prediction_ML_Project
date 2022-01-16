@@ -1,4 +1,2 @@
-2022-01-08 / 10:04:28	Enter in createTable method of DBOperation Class. Start Table Creation
-2022-01-08 / 10:04:28	Table Created Successfully. Exit from createTable method of DBOperation Class
-2022-01-08 / 11:28:23	Enter in createTable method of DBOperation Class. Start Table Creation
-2022-01-08 / 11:28:23	Table Already Created
+2022-01-16 / 20:10:08	Enter in createTable method of DBOperation Class. Start Table Creation
+2022-01-16 / 20:10:08	Table Created Successfully. Exit from createTable method of DBOperation Class

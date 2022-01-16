@@ -1,22 +1,11 @@
-2022-01-08 / 10:04:26	Enter in DeleteExistingBadData method of Raw_Validation Class. Start Existing Deleting Bad Data Folder
-2022-01-08 / 10:04:26	Deleted Existing Bad Data Folder. Exit from DeleteExistingBadData method of Raw_Validation Class
-2022-01-08 / 10:04:26	Enter in DeletExistingGoodData method of Raw_Validation Class. Start Deleting Existing Good Data Folder
-2022-01-08 / 10:04:26	Deleted Existing Good Data Folder. Exit from DeleteExistingGoodData method of Raw_Validation Class
-2022-01-08 / 10:04:26	Enter in CreateGoodBadData method of Raw_Validation Class. Start Creating Good and Bad Data Folder
-2022-01-08 / 10:04:26	Created new Bad Data Folder
-2022-01-08 / 10:04:26	Created new Good Data Folder
-2022-01-08 / 10:04:26	Successfully Created new Good and Bad Data Folder.Exit from CreateGoodBadData method of Raw_Validation Class
-2022-01-08 / 10:11:47	Enter in DeletExistingGoodData method of Raw_Validation Class. Start Deleting Existing Good Data Folder
-2022-01-08 / 10:11:47	Deleted Existing Good Data Folder. Exit from DeleteExistingGoodData method of Raw_Validation Class
-2022-01-08 / 10:11:47	Bad Data folder file Successfully move into Archive Folder.Exit from MoveBadArchiveFolder method of Raw_Validation Class
-2022-01-08 / 11:28:22	Enter in DeleteExistingBadData method of Raw_Validation Class. Start Existing Deleting Bad Data Folder
-2022-01-08 / 11:28:22	Deleted Existing Bad Data Folder. Exit from DeleteExistingBadData method of Raw_Validation Class
-2022-01-08 / 11:28:22	Enter in DeletExistingGoodData method of Raw_Validation Class. Start Deleting Existing Good Data Folder
-2022-01-08 / 11:28:22	Deleted Existing Good Data Folder. Exit from DeleteExistingGoodData method of Raw_Validation Class
-2022-01-08 / 11:28:22	Enter in CreateGoodBadData method of Raw_Validation Class. Start Creating Good and Bad Data Folder
-2022-01-08 / 11:28:22	Created new Bad Data Folder
-2022-01-08 / 11:28:22	Created new Good Data Folder
-2022-01-08 / 11:28:22	Successfully Created new Good and Bad Data Folder.Exit from CreateGoodBadData method of Raw_Validation Class
-2022-01-08 / 11:33:23	Enter in DeletExistingGoodData method of Raw_Validation Class. Start Deleting Existing Good Data Folder
-2022-01-08 / 11:33:23	Deleted Existing Good Data Folder. Exit from DeleteExistingGoodData method of Raw_Validation Class
-2022-01-08 / 11:33:23	Bad Data folder file Successfully move into Archive Folder.Exit from MoveBadArchiveFolder method of Raw_Validation Class
+2022-01-16 / 20:10:07	Enter in DeleteExistingBadData method of Raw_Validation Class. Start Existing Deleting Bad Data Folder
+2022-01-16 / 20:10:07	Deleted Existing Bad Data Folder. Exit from DeleteExistingBadData method of Raw_Validation Class
+2022-01-16 / 20:10:07	Enter in DeletExistingGoodData method of Raw_Validation Class. Start Deleting Existing Good Data Folder
+2022-01-16 / 20:10:07	Deleted Existing Good Data Folder. Exit from DeleteExistingGoodData method of Raw_Validation Class
+2022-01-16 / 20:10:07	Enter in CreateGoodBadData method of Raw_Validation Class. Start Creating Good and Bad Data Folder
+2022-01-16 / 20:10:07	Created new Bad Data Folder
+2022-01-16 / 20:10:07	Created new Good Data Folder
+2022-01-16 / 20:10:07	Successfully Created new Good and Bad Data Folder.Exit from CreateGoodBadData method of Raw_Validation Class
+2022-01-16 / 20:13:29	Enter in DeletExistingGoodData method of Raw_Validation Class. Start Deleting Existing Good Data Folder
+2022-01-16 / 20:13:29	Deleted Existing Good Data Folder. Exit from DeleteExistingGoodData method of Raw_Validation Class
+2022-01-16 / 20:13:29	Bad Data folder file Successfully move into Archive Folder.Exit from MoveBadArchiveFolder method of Raw_Validation Class

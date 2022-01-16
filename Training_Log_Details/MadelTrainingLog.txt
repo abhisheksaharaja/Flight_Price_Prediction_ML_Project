@@ -1,210 +1,105 @@
-2022-01-08 / 10:11:48	Start Madel Training
-2022-01-08 / 10:11:48	Enter in GetData method of Load Data Class.
-2022-01-08 / 10:11:48	Data read Successfully!!! Exit from GetData method of Load Data Class.
-2022-01-08 / 10:11:48	Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows
-2022-01-08 / 10:11:48	Duplicate Rows: 6874
-2022-01-08 / 10:11:48	Remove Duplicate Rows. File Contain only unique Rows. Exit from RemoveDuplicateRow method of Data_Preprocessing Class
-2022-01-08 / 10:11:48	Enter in SeperateLabelFeature method of Data_Preprocessing Class .Starting Separate Label Feature
-2022-01-08 / 10:11:48	Label Feature Separation Completed. Exit from SeparateLabelFeature method of Data_Preprocessing Class
-2022-01-08 / 10:11:48	Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values
-2022-01-08 / 10:11:48	Finding missing values is a success.Data written to the null values file. Exit from IsNullPresent method of Data_Preprocessing Class
-2022-01-08 / 10:11:48	Enter in ImputeMissingValue method of Data_Preprocessing Class. Start Imputing missing Values
-2022-01-08 / 10:11:48	End of Imputing missing Values. Exit from ImputeMissingValue method of Data_Preprocessing Class
-2022-01-08 / 10:11:48	Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature
-2022-01-08 / 10:11:48	Successfully impute Date of Journey Feature also create two new feature to store day and month seperately. Exit from DateOfJourneyFeatureFormat method of Data_Preprocessing Class
-2022-01-08 / 10:11:48	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
-2022-01-08 / 10:11:48	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
-2022-01-08 / 10:11:48	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
-2022-01-08 / 10:11:50	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
-2022-01-08 / 10:11:50	Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting
-2022-01-08 / 10:11:50	Successfully Completed Duration Feature Formatting. Exit from TimeFeatureFormat_1 method of Data_Preprocessing Class.
-2022-01-08 / 10:11:50	Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started
-2022-01-08 / 10:11:51	Airline Encoding done Successfully
-2022-01-08 / 10:11:51	Source Encoding done Successfully
-2022-01-08 / 10:11:51	Destination Encoding done Successfully
-2022-01-08 / 10:11:52	Total_Stops Encoding done Successfully
-2022-01-08 / 10:11:52	Encoding Completed. Exit from LabelEncoding method of Data_Preprocessing Class.
-2022-01-08 / 10:11:52	Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column
-2022-01-08 / 10:11:52	Drop Column: Date_of_Journey
-2022-01-08 / 10:11:52	Drop Column: Route
-2022-01-08 / 10:11:52	Drop Column: Dep_Time
-2022-01-08 / 10:11:52	Drop Column: Arrival_Time
-2022-01-08 / 10:11:52	Drop Column: Duration
-2022-01-08 / 10:11:52	Drop Column: Additional_Info
-2022-01-08 / 10:11:52	Successfully Drop column
-2022-01-08 / 10:11:52	Enter in PlotElbow method of KMeansClustering method. To Find Cluster number.
-2022-01-08 / 10:12:58	Optimum minimum Cluster: 6
-2022-01-08 / 10:12:58	Successfully find the cluster number. Exit from FindClusterNumber method of KMeansClustering Class.
-2022-01-08 / 10:12:58	Enter in CreateCluster method of KMeansClustering Class. To create CreateCluster.
-2022-01-08 / 10:13:00	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 10:13:00	Madel kmeans Save Successfully
-2022-01-08 / 10:13:00	Successfully Created 6 number of Cluster and Save madel Successfully for CreateCluster method of KMeansClustering Class.
-2022-01-08 / 10:13:00	Exit from CreateCluster method of KMeansClustering Class.
-2022-01-08 / 10:13:00	Start to Find Madel
-2022-01-08 / 10:13:00	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 10:13:00	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:21:30	Random Forest best params: {'n_estimators': 830, 'min_samples_split': 10, 'min_samples_leaf': 7, 'max_features': 'auto', 'max_depth': 13}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 10:21:30	R_Square for Random Forest:0.8704563943840423Adjusted_R_Square for Random Forest: 0.8688131351161866
-2022-01-08 / 10:21:30	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:23:38	XgbRegressor best params: {'reg_lambda': 10.0, 'n_estimators': 579, 'max_depth': 9, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 10:23:38	R_Square for XGBRegressor:0.9048458676121681Adjusted_R_Square for XGBRegressor: 0.9036388384486861
-2022-01-08 / 10:23:38	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 10:23:38	Madel Xgb_Madel2 Save Successfully
-2022-01-08 / 10:23:38	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 10:23:38	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 10:23:38	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:30:32	Random Forest best params: {'n_estimators': 866, 'min_samples_split': 15, 'min_samples_leaf': 7, 'max_features': 'auto', 'max_depth': 11}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 10:30:32	R_Square for Random Forest:0.8447603597750439Adjusted_R_Square for Random Forest: 0.8428671934308372
-2022-01-08 / 10:30:32	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:32:06	XgbRegressor best params: {'reg_lambda': 0.001, 'n_estimators': 486, 'max_depth': 4, 'learning_rate': 0.1, 'colsample_bytree': 0.4}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 10:32:07	R_Square for XGBRegressor:0.9079535860682206Adjusted_R_Square for XGBRegressor: 0.9068310688251502
-2022-01-08 / 10:32:07	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 10:32:07	Madel Xgb_Madel1 Save Successfully
-2022-01-08 / 10:32:07	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 10:32:07	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 10:32:07	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:37:32	Random Forest best params: {'n_estimators': 1077, 'min_samples_split': 15, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 27}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 10:37:32	R_Square for Random Forest:0.795988275961222Adjusted_R_Square for Random Forest: 0.7931710829940583
-2022-01-08 / 10:37:32	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:38:06	XgbRegressor best params: {'reg_lambda': 45.0, 'n_estimators': 501, 'max_depth': 12, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 10:38:06	R_Square for XGBRegressor:0.8694214055978998Adjusted_R_Square for XGBRegressor: 0.8676182489433254
-2022-01-08 / 10:38:06	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 10:38:07	Madel Xgb_Madel0 Save Successfully
-2022-01-08 / 10:38:07	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 10:38:07	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 10:38:07	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:43:08	Random Forest best params: {'n_estimators': 1413, 'min_samples_split': 15, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 10:43:08	R_Square for Random Forest:0.8670646239388828Adjusted_R_Square for Random Forest: 0.8657341614595389
-2022-01-08 / 10:43:08	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:43:56	XgbRegressor best params: {'reg_lambda': 0.1, 'n_estimators': 538, 'max_depth': 8, 'learning_rate': 0.1, 'colsample_bytree': 0.4}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 10:43:56	R_Square for XGBRegressor:0.9187235271793179Adjusted_R_Square for XGBRegressor: 0.9179100845822803
-2022-01-08 / 10:43:56	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 10:43:56	Madel Xgb_Madel5 Save Successfully
-2022-01-08 / 10:43:56	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 10:43:56	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 10:43:56	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:47:34	Random Forest best params: {'n_estimators': 956, 'min_samples_split': 15, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 21}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 10:47:34	R_Square for Random Forest:0.8953857212180918Adjusted_R_Square for Random Forest: 0.8940285630068671
-2022-01-08 / 10:47:34	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:48:16	XgbRegressor best params: {'reg_lambda': 10.0, 'n_estimators': 372, 'max_depth': 9, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 10:48:16	R_Square for XGBRegressor:0.9227182718744763Adjusted_R_Square for XGBRegressor: 0.9217156981041993
-2022-01-08 / 10:48:16	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 10:48:16	Madel Xgb_Madel4 Save Successfully
-2022-01-08 / 10:48:16	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 10:48:16	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 10:48:16	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:53:38	Random Forest best params: {'n_estimators': 731, 'min_samples_split': 15, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 23}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 10:53:38	R_Square for Random Forest:0.8355899691868589Adjusted_R_Square for Random Forest: 0.8340534268428108
-2022-01-08 / 10:53:38	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 10:54:31	XgbRegressor best params: {'reg_lambda': 1.0, 'n_estimators': 341, 'max_depth': 10, 'learning_rate': 0.1, 'colsample_bytree': 0.2}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 10:54:31	R_Square for XGBRegressor:0.8469122137892089Adjusted_R_Square for XGBRegressor: 0.8454814868152762
-2022-01-08 / 10:54:31	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 10:54:31	Madel Xgb_Madel3 Save Successfully
-2022-01-08 / 10:54:31	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 10:54:31	Successfully saved all Madel for each Cluster.
-2022-01-08 / 10:54:31	End Successful Madel Training. Exit from MadelTraining method of TrainingMadel Class
-2022-01-08 / 11:33:24	Start Madel Training
-2022-01-08 / 11:33:24	Enter in GetData method of Load Data Class.
-2022-01-08 / 11:33:24	Data read Successfully!!! Exit from GetData method of Load Data Class.
-2022-01-08 / 11:33:24	Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows
-2022-01-08 / 11:33:24	Duplicate Rows: 38873
-2022-01-08 / 11:33:24	Remove Duplicate Rows. File Contain only unique Rows. Exit from RemoveDuplicateRow method of Data_Preprocessing Class
-2022-01-08 / 11:33:24	Enter in SeperateLabelFeature method of Data_Preprocessing Class .Starting Separate Label Feature
-2022-01-08 / 11:33:24	Label Feature Separation Completed. Exit from SeparateLabelFeature method of Data_Preprocessing Class
-2022-01-08 / 11:33:24	Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values
-2022-01-08 / 11:33:24	Finding missing values is a success.Data written to the null values file. Exit from IsNullPresent method of Data_Preprocessing Class
-2022-01-08 / 11:33:24	Enter in ImputeMissingValue method of Data_Preprocessing Class. Start Imputing missing Values
-2022-01-08 / 11:33:24	End of Imputing missing Values. Exit from ImputeMissingValue method of Data_Preprocessing Class
-2022-01-08 / 11:33:24	Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature
-2022-01-08 / 11:33:24	Successfully impute Date of Journey Feature also create two new feature to store day and month seperately. Exit from DateOfJourneyFeatureFormat method of Data_Preprocessing Class
-2022-01-08 / 11:33:24	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
-2022-01-08 / 11:33:24	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
-2022-01-08 / 11:33:24	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
-2022-01-08 / 11:33:25	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
-2022-01-08 / 11:33:25	Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting
-2022-01-08 / 11:33:25	Successfully Completed Duration Feature Formatting. Exit from TimeFeatureFormat_1 method of Data_Preprocessing Class.
-2022-01-08 / 11:33:25	Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started
-2022-01-08 / 11:33:26	Airline Encoding done Successfully
-2022-01-08 / 11:33:26	Source Encoding done Successfully
-2022-01-08 / 11:33:26	Destination Encoding done Successfully
-2022-01-08 / 11:33:26	Total_Stops Encoding done Successfully
-2022-01-08 / 11:33:26	Encoding Completed. Exit from LabelEncoding method of Data_Preprocessing Class.
-2022-01-08 / 11:33:26	Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column
-2022-01-08 / 11:33:26	Drop Column: Date_of_Journey
-2022-01-08 / 11:33:26	Drop Column: Route
-2022-01-08 / 11:33:26	Drop Column: Dep_Time
-2022-01-08 / 11:33:26	Drop Column: Arrival_Time
-2022-01-08 / 11:33:26	Drop Column: Duration
-2022-01-08 / 11:33:26	Drop Column: Additional_Info
-2022-01-08 / 11:33:26	Successfully Drop column
-2022-01-08 / 11:33:26	Enter in PlotElbow method of KMeansClustering method. To Find Cluster number.
-2022-01-08 / 11:34:01	Optimum minimum Cluster: 6
-2022-01-08 / 11:34:01	Successfully find the cluster number. Exit from FindClusterNumber method of KMeansClustering Class.
-2022-01-08 / 11:34:01	Enter in CreateCluster method of KMeansClustering Class. To create CreateCluster.
-2022-01-08 / 11:34:02	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 11:34:02	Madel kmeans Save Successfully
-2022-01-08 / 11:34:02	Successfully Created 6 number of Cluster and Save madel Successfully for CreateCluster method of KMeansClustering Class.
-2022-01-08 / 11:34:02	Exit from CreateCluster method of KMeansClustering Class.
-2022-01-08 / 11:34:02	Start to Find Madel
-2022-01-08 / 11:34:02	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 11:34:02	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:38:00	Random Forest best params: {'n_estimators': 1348, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 'auto', 'max_depth': 17}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 11:38:00	R_Square for Random Forest:0.8729329512552308Adjusted_R_Square for Random Forest: 0.8713194014299004
-2022-01-08 / 11:38:00	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:39:06	XgbRegressor best params: {'reg_lambda': 0.1, 'n_estimators': 463, 'max_depth': 8, 'learning_rate': 0.1, 'colsample_bytree': 0.4}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 11:39:06	R_Square for XGBRegressor:0.9041554506205679Adjusted_R_Square for XGBRegressor: 0.9029383769776544
-2022-01-08 / 11:39:06	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 11:39:06	Madel Xgb_Madel1 Save Successfully
-2022-01-08 / 11:39:06	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 11:39:06	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 11:39:06	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:43:17	Random Forest best params: {'n_estimators': 1137, 'min_samples_split': 15, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 10}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 11:43:17	R_Square for Random Forest:0.8145020165607605Adjusted_R_Square for Random Forest: 0.8122760407594896
-2022-01-08 / 11:43:17	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:43:47	XgbRegressor best params: {'reg_lambda': 60.0, 'n_estimators': 288, 'max_depth': 13, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 11:43:47	R_Square for XGBRegressor:0.8112992425549129Adjusted_R_Square for XGBRegressor: 0.8090348334655719
-2022-01-08 / 11:43:47	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 11:43:47	Madel Random_Forest_Madel3 Save Successfully
-2022-01-08 / 11:43:47	Best Madel : Random_Forest_Madel saved  Successfully 
-2022-01-08 / 11:43:47	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 11:43:47	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:47:01	Random Forest best params: {'n_estimators': 1176, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 26}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 11:47:01	R_Square for Random Forest:0.8652203550890422Adjusted_R_Square for Random Forest: 0.8633418931390636
-2022-01-08 / 11:47:01	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:47:45	XgbRegressor best params: {'reg_lambda': 0.001, 'n_estimators': 372, 'max_depth': 11, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 11:47:45	R_Square for XGBRegressor:0.9321250621599462Adjusted_R_Square for XGBRegressor: 0.931179069994928
-2022-01-08 / 11:47:45	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 11:47:46	Madel Xgb_Madel0 Save Successfully
-2022-01-08 / 11:47:46	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 11:47:46	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 11:47:46	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:51:45	Random Forest best params: {'n_estimators': 712, 'min_samples_split': 15, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 10}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 11:51:46	R_Square for Random Forest:0.8801069494616353Adjusted_R_Square for Random Forest: 0.8789149721571942
-2022-01-08 / 11:51:46	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:52:37	XgbRegressor best params: {'reg_lambda': 29.0, 'n_estimators': 486, 'max_depth': 1, 'learning_rate': 0.1, 'colsample_bytree': 0.1}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 11:52:37	R_Square for XGBRegressor:0.7089008941729842Adjusted_R_Square for XGBRegressor: 0.7060067854157976
-2022-01-08 / 11:52:37	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 11:52:37	Madel Random_Forest_Madel2 Save Successfully
-2022-01-08 / 11:52:37	Best Madel : Random_Forest_Madel saved  Successfully 
-2022-01-08 / 11:52:37	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 11:52:37	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:55:37	Random Forest best params: {'n_estimators': 1065, 'min_samples_split': 27, 'min_samples_leaf': 2, 'max_features': 'auto', 'max_depth': 13}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 11:55:37	R_Square for Random Forest:0.9123270611729448Adjusted_R_Square for Random Forest: 0.9111709345070935
-2022-01-08 / 11:55:37	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 11:56:05	XgbRegressor best params: {'reg_lambda': 1.0, 'n_estimators': 202, 'max_depth': 7, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 11:56:05	R_Square for XGBRegressor:0.943419878364306Adjusted_R_Square for XGBRegressor: 0.9426737668702089
-2022-01-08 / 11:56:05	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 11:56:05	Madel Xgb_Madel5 Save Successfully
-2022-01-08 / 11:56:05	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 11:56:05	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparision.
-2022-01-08 / 11:56:05	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 12:01:21	Random Forest best params: {'n_estimators': 1065, 'min_samples_split': 20, 'min_samples_leaf': 2, 'max_features': 'auto', 'max_depth': 17}. Exited the best_param_Random_Forest method of the MadelTuner class
-2022-01-08 / 12:01:21	R_Square for Random Forest:0.8367961193815573Adjusted_R_Square for Random Forest: 0.8352708494692354
-2022-01-08 / 12:01:21	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
-2022-01-08 / 12:02:00	XgbRegressor best params: {'reg_lambda': 0.1, 'n_estimators': 441, 'max_depth': 11, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
-2022-01-08 / 12:02:00	R_Square for XGBRegressor:0.8814258716250323Adjusted_R_Square for XGBRegressor: 0.8803177022009672
-2022-01-08 / 12:02:00	Entered in Save_Madel method of the File_Operation class. To Save Madel
-2022-01-08 / 12:02:00	Madel Xgb_Madel4 Save Successfully
-2022-01-08 / 12:02:00	Best Madel : Xgb_Madel saved  Successfully 
-2022-01-08 / 12:02:00	Successfully saved all Madel for each Cluster.
-2022-01-08 / 12:02:00	End Successful Madel Training. Exit from MadelTraining method of TrainingMadel Class
+2022-01-16 / 20:13:29	Start Madel Training
+2022-01-16 / 20:13:29	Enter in GetData method of Load Data Class.
+2022-01-16 / 20:13:29	Data read Successfully!!! Exit from GetData method of Load Data Class.
+2022-01-16 / 20:13:29	Enter in RemoveDuplicateRow method of Data_Preprocessing Class. Start removing Duplicate Rows
+2022-01-16 / 20:13:29	Duplicate Rows: 6654
+2022-01-16 / 20:13:29	Remove Duplicate Rows. File Contain only unique Rows. Exit from RemoveDuplicateRow method of Data_Preprocessing Class
+2022-01-16 / 20:13:29	Enter in SeperateLabelFeature method of Data_Preprocessing Class .Starting Separate Label Feature
+2022-01-16 / 20:13:29	Label Feature Separation Completed. Exit from SeparateLabelFeature method of Data_Preprocessing Class
+2022-01-16 / 20:13:29	Enter in IsNullPresent method of Data_Preprocessing Class. Start Count Number of Null Values
+2022-01-16 / 20:13:29	Finding missing values is a success.Data written to the null values file. Exit from IsNullPresent method of Data_Preprocessing Class
+2022-01-16 / 20:13:29	Enter in ImputeMissingValue method of Data_Preprocessing Class. Start Imputing missing Values
+2022-01-16 / 20:13:29	End of Imputing missing Values. Exit from ImputeMissingValue method of Data_Preprocessing Class
+2022-01-16 / 20:13:29	Enter in DateOfJourneyFeatureFormat method of Data_Preprocessing Class .Start Formatting Date of Journey Feature
+2022-01-16 / 20:13:29	Successfully impute Date of Journey Feature also create two new feature to store day and month seperately. Exit from DateOfJourneyFeatureFormat method of Data_Preprocessing Class
+2022-01-16 / 20:13:29	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-16 / 20:13:29	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-16 / 20:13:29	Enter in TimeFeatureFormat method of Data_Preprocessing Class. Start Formatting Time Feature
+2022-01-16 / 20:13:29	Successfully impute Time Format Feature also create two new feature to store Hour and Minute separately. Exit from TimeFeatureFormat method of Data_Preprocessing Class.
+2022-01-16 / 20:13:29	Enter in TimeFeatureFormat_1 method of Data_Preprocessing Class. Start Duration Feature Formatting
+2022-01-16 / 20:13:29	Successfully Completed Duration Feature Formatting. Exit from TimeFeatureFormat_1 method of Data_Preprocessing Class.
+2022-01-16 / 20:13:29	Enter in LabelEncoding method of Data_Preprocessing Class. Label Encoding Started
+2022-01-16 / 20:13:30	Airline Encoding done Successfully
+2022-01-16 / 20:13:30	Source Encoding done Successfully
+2022-01-16 / 20:13:30	Destination Encoding done Successfully
+2022-01-16 / 20:13:30	Total_Stops Encoding done Successfully
+2022-01-16 / 20:13:30	Encoding Completed. Exit from LabelEncoding method of Data_Preprocessing Class.
+2022-01-16 / 20:13:30	Enter in ColumnDrop method of Data_Preprocessing Class. Start Dropping Column
+2022-01-16 / 20:13:30	Drop Column: Date_of_Journey
+2022-01-16 / 20:13:30	Drop Column: Route
+2022-01-16 / 20:13:30	Drop Column: Dep_Time
+2022-01-16 / 20:13:30	Drop Column: Arrival_Time
+2022-01-16 / 20:13:30	Drop Column: Duration
+2022-01-16 / 20:13:30	Drop Column: Additional_Info
+2022-01-16 / 20:13:30	Successfully Drop column
+2022-01-16 / 20:13:30	Enter in PlotElbow method of KMeansClustering method. To Find Cluster number.
+2022-01-16 / 20:13:43	Optimum minimum Cluster: 6
+2022-01-16 / 20:13:43	Successfully find the cluster number. Exit from FindClusterNumber method of KMeansClustering Class.
+2022-01-16 / 20:13:43	Enter in CreateCluster method of KMeansClustering Class. To create CreateCluster.
+2022-01-16 / 20:13:44	Entered in Save_Madel method of the File_Operation class. To Save Madel
+2022-01-16 / 20:13:44	Madel kmeans Save Successfully
+2022-01-16 / 20:13:44	Successfully Created 6 number of Cluster and Save madel Successfully for CreateCluster method of KMeansClustering Class.
+2022-01-16 / 20:13:44	Exit from CreateCluster method of KMeansClustering Class.
+2022-01-16 / 20:13:44	Start to Find Madel
+2022-01-16 / 20:13:44	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparison.
+2022-01-16 / 20:13:44	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:15:57	Random Forest best params: {'n_estimators': 1389, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 'sqrt', 'max_depth': 15}. Exited the best_param_Random_Forest method of the MadelTuner class
+2022-01-16 / 20:15:57	R_Square for Random Forest:0.8240164842605036Adjusted_R_Square for Random Forest: 0.8201344949427205
+2022-01-16 / 20:15:57	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:16:43	XgbRegressor best params: {'reg_lambda': 19.0, 'n_estimators': 318, 'max_depth': 13, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
+2022-01-16 / 20:16:43	R_Square for XGBRegressor:0.8354589804294852Adjusted_R_Square for XGBRegressor: 0.8318293991154297
+2022-01-16 / 20:16:43	Entered in Save_Madel method of the File_Operation class. To Save Madel
+2022-01-16 / 20:16:43	Madel Xgb_Madel1 Save Successfully
+2022-01-16 / 20:16:43	Best Madel : Xgb_Madel saved  Successfully 
+2022-01-16 / 20:16:43	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparison.
+2022-01-16 / 20:16:43	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:20:08	Random Forest best params: {'n_estimators': 973, 'min_samples_split': 20, 'min_samples_leaf': 5, 'max_features': 'auto', 'max_depth': 13}. Exited the best_param_Random_Forest method of the MadelTuner class
+2022-01-16 / 20:20:08	R_Square for Random Forest:0.7562406033023743Adjusted_R_Square for Random Forest: 0.7509606163702958
+2022-01-16 / 20:20:08	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:20:38	XgbRegressor best params: {'reg_lambda': 29.0, 'n_estimators': 273, 'max_depth': 5, 'learning_rate': 0.1, 'colsample_bytree': 0.4}. Exited the best_param_XgbRegressor method of the MadelTuner class
+2022-01-16 / 20:20:38	R_Square for XGBRegressor:0.821030434415077Adjusted_R_Square for XGBRegressor: 0.8171538373265949
+2022-01-16 / 20:20:38	Entered in Save_Madel method of the File_Operation class. To Save Madel
+2022-01-16 / 20:20:38	Madel Xgb_Madel0 Save Successfully
+2022-01-16 / 20:20:38	Best Madel : Xgb_Madel saved  Successfully 
+2022-01-16 / 20:20:38	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparison.
+2022-01-16 / 20:20:38	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:23:41	Random Forest best params: {'n_estimators': 1164, 'min_samples_split': 10, 'min_samples_leaf': 5, 'max_features': 'auto', 'max_depth': 29}. Exited the best_param_Random_Forest method of the MadelTuner class
+2022-01-16 / 20:23:41	R_Square for Random Forest:0.7307659831824904Adjusted_R_Square for Random Forest: 0.7244061245175099
+2022-01-16 / 20:23:41	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:24:11	XgbRegressor best params: {'reg_lambda': 19.0, 'n_estimators': 372, 'max_depth': 11, 'learning_rate': 0.1, 'colsample_bytree': 0.4}. Exited the best_param_XgbRegressor method of the MadelTuner class
+2022-01-16 / 20:24:11	R_Square for XGBRegressor:0.878032998061588Adjusted_R_Square for XGBRegressor: 0.8751518877795782
+2022-01-16 / 20:24:11	Entered in Save_Madel method of the File_Operation class. To Save Madel
+2022-01-16 / 20:24:12	Madel Xgb_Madel4 Save Successfully
+2022-01-16 / 20:24:12	Best Madel : Xgb_Madel saved  Successfully 
+2022-01-16 / 20:24:12	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparison.
+2022-01-16 / 20:24:12	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:27:54	Random Forest best params: {'n_estimators': 1160, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 27}. Exited the best_param_Random_Forest method of the MadelTuner class
+2022-01-16 / 20:27:54	R_Square for Random Forest:0.8488730846022873Adjusted_R_Square for Random Forest: 0.8462485940309812
+2022-01-16 / 20:27:54	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:28:33	XgbRegressor best params: {'reg_lambda': 0.001, 'n_estimators': 470, 'max_depth': 13, 'learning_rate': 0.1, 'colsample_bytree': 0.2}. Exited the best_param_XgbRegressor method of the MadelTuner class
+2022-01-16 / 20:28:33	R_Square for XGBRegressor:0.8210930881906365Adjusted_R_Square for XGBRegressor: 0.8179861664226012
+2022-01-16 / 20:28:33	Entered in Save_Madel method of the File_Operation class. To Save Madel
+2022-01-16 / 20:28:34	Madel Random_Forest_Madel5 Save Successfully
+2022-01-16 / 20:28:34	Best Madel : Random_Forest_Madel saved  Successfully 
+2022-01-16 / 20:28:34	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparison.
+2022-01-16 / 20:28:34	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:31:36	Random Forest best params: {'n_estimators': 884, 'min_samples_split': 15, 'min_samples_leaf': 5, 'max_features': 'auto', 'max_depth': 23}. Exited the best_param_Random_Forest method of the MadelTuner class
+2022-01-16 / 20:31:36	R_Square for Random Forest:0.8224547322960408Adjusted_R_Square for Random Forest: 0.8185092819026195
+2022-01-16 / 20:31:36	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:32:25	XgbRegressor best params: {'reg_lambda': 0.1, 'n_estimators': 434, 'max_depth': 8, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
+2022-01-16 / 20:32:25	R_Square for XGBRegressor:0.9110291854764425Adjusted_R_Square for XGBRegressor: 0.9090520562648079
+2022-01-16 / 20:32:25	Entered in Save_Madel method of the File_Operation class. To Save Madel
+2022-01-16 / 20:32:25	Madel Xgb_Madel3 Save Successfully
+2022-01-16 / 20:32:25	Best Madel : Xgb_Madel saved  Successfully 
+2022-01-16 / 20:32:25	Entered in find_best_madel method of MadelTuner Class. To find best madel after comparison.
+2022-01-16 / 20:32:25	Enter in best_param_Random_Forest method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:36:01	Random Forest best params: {'n_estimators': 969, 'min_samples_split': 15, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 20}. Exited the best_param_Random_Forest method of the MadelTuner class
+2022-01-16 / 20:36:01	R_Square for Random Forest:0.7597991084048871Adjusted_R_Square for Random Forest: 0.7559661154539012
+2022-01-16 / 20:36:01	Entered in best_param_XgbRegressor method of MadelTuner Class. Start finding best Madel
+2022-01-16 / 20:36:38	XgbRegressor best params: {'reg_lambda': 1.0, 'n_estimators': 442, 'max_depth': 4, 'learning_rate': 0.1, 'colsample_bytree': 0.3}. Exited the best_param_XgbRegressor method of the MadelTuner class
+2022-01-16 / 20:36:38	R_Square for XGBRegressor:0.7310644974139684Adjusted_R_Square for XGBRegressor: 0.7267729734365318
+2022-01-16 / 20:36:38	Entered in Save_Madel method of the File_Operation class. To Save Madel
+2022-01-16 / 20:36:38	Madel Random_Forest_Madel2 Save Successfully
+2022-01-16 / 20:36:38	Best Madel : Random_Forest_Madel saved  Successfully 
+2022-01-16 / 20:36:38	Successfully saved all Madel for each Cluster.
+2022-01-16 / 20:36:38	End Successful Madel Training. Exit from MadelTraining method of TrainingMadel Class
