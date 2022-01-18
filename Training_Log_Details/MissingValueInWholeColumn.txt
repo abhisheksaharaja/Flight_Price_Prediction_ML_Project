@@ -1,2 +1,2 @@
-2022-01-16 / 20:10:07	Enter in MissingValueInWholeColumnValidation method of Raw_Validation Class. Start Validation to Find Any Column entirely Contain Missing Value
-2022-01-16 / 20:10:07	Completed Validation to Find Any Column entirely Contain Missing Value. Exit from MissingValueInWholeColumnValidation method of Raw_Validation Class
+2022-01-18 / 15:46:21	Enter in MissingValueInWholeColumnValidation method of Raw_Validation Class. Start Validation to Find Any Column entirely Contain Missing Value
+2022-01-18 / 15:46:21	Completed Validation to Find Any Column entirely Contain Missing Value. Exit from MissingValueInWholeColumnValidation method of Raw_Validation Class

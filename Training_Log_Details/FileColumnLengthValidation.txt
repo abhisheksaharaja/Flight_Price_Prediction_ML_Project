@@ -1,2 +1,2 @@
-2022-01-16 / 20:10:07	Enter in ColumnLengthValidation method of Raw_Validation Class. File Column Length validation Started
-2022-01-16 / 20:10:07	File Column Length validation Completed. Exit from ColumnLengthValidation method of Raw_Validation Class
+2022-01-18 / 15:46:21	Enter in ColumnLengthValidation method of Raw_Validation Class. File Column Length validation Started
+2022-01-18 / 15:46:21	File Column Length validation Completed. Exit from ColumnLengthValidation method of Raw_Validation Class

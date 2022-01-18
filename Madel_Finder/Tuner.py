@@ -164,7 +164,7 @@ class MadelTuner:
 
             self.r_square_rf=metrics.r2_score(y_test,self.prediction_Random_Forest)
             self.adj_r_square_rf=self.adj_r_square(self.r_square_rf,x_test)
-            self.log.log(self.file_object, 'R_Square for Random Forest:' + str(self.r_square_rf)+'Adjusted_R_Square for Random Forest: '+str(self.adj_r_square_rf))
+            self.log.log(self.file_object, 'R_Square for Random Forest:' + str(self.r_square_rf)+' Adjusted_R_Square for Random Forest: '+str(self.adj_r_square_rf))
 
             # create best model for XGBoost
             self.Xgb_Madel = self.best_param_XgbRegressor(x_train, y_train)
@@ -172,14 +172,14 @@ class MadelTuner:
 
             self.r_square_xgb = metrics.r2_score(y_test, self.prediction_XgbRegressor)
             self.adj_r_square_xgb = self.adj_r_square(self.r_square_xgb, x_test)
-            self.log.log(self.file_object, 'R_Square for XGBRegressor:' + str(self.r_square_xgb) + 'Adjusted_R_Square for XGBRegressor: ' + str(self.adj_r_square_xgb))
+            self.log.log(self.file_object, 'R_Square for XGBRegressor:' + str(self.r_square_xgb) + ' Adjusted_R_Square for XGBRegressor: ' + str(self.adj_r_square_xgb))
 
-            # comparing the two Madels
+            # comparing the two Models
             if self.r_square_rf < self.r_square_xgb:
                 return 'Xgb_Madel',self.Xgb_Madel
             else:
                 return 'Random_Forest_Madel',self.Random_Forest_Madel
 
         except Exception as e:
-            self.log.log(self.file_object, 'Madel Selection Failed!! Error Occoured While Find the Best Madel in find_best_madel method of MadelTuner Class. Error Msr: '+str(e))
+            self.log.log(self.file_object, 'Madel Selection Failed!! Error Occurred While Find the Best Madel in find_best_madel method of MadelTuner Class. Error Msr: '+str(e))
             raise e

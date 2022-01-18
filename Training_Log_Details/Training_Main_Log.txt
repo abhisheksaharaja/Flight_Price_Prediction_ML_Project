@@ -1,16 +1,16 @@
-2022-01-16 / 20:10:07	 Start Raw Data Validation for Madel Training Dataset.
-2022-01-16 / 20:10:07	Raw Data Validation Completed
-2022-01-16 / 20:10:07	Start Data Transformation
-2022-01-16 / 20:10:08	End with Data Transformation Process
-2022-01-16 / 20:10:08	Database Operation Started
-2022-01-16 / 20:10:08	Table Created
-2022-01-16 / 20:10:08	Data insertion into Table
-2022-01-16 / 20:13:29	Data Successfully insert into Table
-2022-01-16 / 20:13:29	Deleteing Existing Good Data Folder
-2022-01-16 / 20:13:29	Successfully Deleted Existing Good Data Folder
-2022-01-16 / 20:13:29	Start moving Bad Data Folder into Bad Data Archive Folder
-2022-01-16 / 20:13:29	Successfully move Bad Data Folder into Bad Data Archive Folder
-2022-01-16 / 20:13:29	Start moving Data from Database Table to CSV
-2022-01-16 / 20:13:29	Successfully load data from Table to CSV
-2022-01-16 / 20:13:29	Database Operation Ended
-2022-01-16 / 20:13:29	Ended Raw Data Validation for Madel Training Dataset. Exit from Training method of Training_Validation Class
+2022-01-18 / 15:46:21	 Start Raw Data Validation for Madel Training Dataset.
+2022-01-18 / 15:46:21	Raw Data Validation Completed
+2022-01-18 / 15:46:21	Start Data Transformation
+2022-01-18 / 15:46:22	End with Data Transformation Process
+2022-01-18 / 15:46:22	Database Operation Started
+2022-01-18 / 15:46:22	Table Created
+2022-01-18 / 15:46:22	Data insertion into Table
+2022-01-18 / 15:49:50	Data Successfully insert into Table
+2022-01-18 / 15:49:50	Deleteing Existing Good Data Folder
+2022-01-18 / 15:49:50	Successfully Deleted Existing Good Data Folder
+2022-01-18 / 15:49:50	Start moving Bad Data Folder into Bad Data Archive Folder
+2022-01-18 / 15:49:50	Successfully move Bad Data Folder into Bad Data Archive Folder
+2022-01-18 / 15:49:50	Start moving Data from Database Table to CSV
+2022-01-18 / 15:49:51	Successfully load data from Table to CSV
+2022-01-18 / 15:49:51	Database Operation Ended
+2022-01-18 / 15:49:51	Ended Raw Data Validation for Madel Training Dataset. Exit from Training method of Training_Validation Class
