@@ -212,13 +212,13 @@ git push
 ## Inference demo
 
 1. UI for Flight Price Prediction
-![S1](https://user-images.githubusercontent.com/76595524/148633333-de854d00-ad5b-4fe4-95a1-5ca563994f1c.jpg)
+![s1](https://user-images.githubusercontent.com/76595524/149933862-d9fca45f-5e9e-4fbd-bee7-c7458d38f653.jpg)
 
 2. UI for Prediction File Outcome:
-![S2](https://user-images.githubusercontent.com/76595524/148633342-055c7ee4-fef6-407e-b562-a883713bf555.jpg)
+![s2](https://user-images.githubusercontent.com/76595524/149933876-90121044-eb88-453a-ae36-15ef260c65f7.jpg)
 
 3. UI for Custom File Prediction Outcome:
-![S3](https://user-images.githubusercontent.com/76595524/148633347-925b4f88-2c2d-48c9-8cfa-2c9f86886bcb.jpg)
+![s3](https://user-images.githubusercontent.com/76595524/149933888-42a9033f-885d-4be4-8190-eceb63eaf9a3.jpg)
 
 
 ## Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25> 
