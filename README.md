@@ -116,9 +116,9 @@ In This step, we perform different sets of validation on the given set of traini
     ###  Airline 
     ![Airline](https://user-images.githubusercontent.com/76595524/148056571-68d7e31d-0c80-4ba5-8099-425c4d3faa27.png)
    ###  Source
-   ![Source](https://user-images.githubusercontent.com/76595524/148057318-bc0958a1-a8de-4161-9e86-2d7934d3a79a.png)
+   ![source](https://user-images.githubusercontent.com/76595524/150360619-fdaaadb4-8586-4172-9b7a-4b67828c73f9.jpg)
    ###  Destination
-   ![Destination](https://user-images.githubusercontent.com/76595524/148057156-331a85ae-9f65-481f-8f46-1bfa66c8a860.png)
+   ![dest](https://user-images.githubusercontent.com/76595524/150360597-d93b66aa-be15-4aa7-85a7-cc6ab9a6a330.jpg)
    
 
 - Clustering: 
