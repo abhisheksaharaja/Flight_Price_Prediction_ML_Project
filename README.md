@@ -122,7 +122,7 @@ In This step, we perform different sets of validation on the given set of traini
    
 
 - Clustering: 
-        KMeans algorithm is used to create clusters in the preprocessed data. To select optimum number of clusters. 
+        KMeans algorithm is used to find clusters in preprocessed data. To select optimum number of clusters. 
         ![Cluster](https://user-images.githubusercontent.com/76595524/148057837-4e376515-11c4-4833-a814-5c5f3d48c768.png)
 
 - Find best Madel:
