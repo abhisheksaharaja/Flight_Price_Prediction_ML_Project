@@ -218,12 +218,4 @@ git push
 ![s2](https://user-images.githubusercontent.com/76595524/149933876-90121044-eb88-453a-ae36-15ef260c65f7.jpg)
 
 3. UI for Custom File Prediction Outcome:
-![s3](https://user-images.githubusercontent.com/76595524/149933888-42a9033f-885d-4be4-8190-eceb63eaf9a3.jpg)
-
-
-## Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25> 
-- Abhishek Saha
-- Souvik Dey
-
-
-    
+![s3](https://user-images.githubusercontent.com/76595524/149933888-42a9033f-885d-4be4-8190-eceb63eaf9a3.jpg)  
