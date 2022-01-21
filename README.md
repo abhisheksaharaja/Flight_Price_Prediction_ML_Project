@@ -116,19 +116,19 @@ In This step, we perform different sets of validation on the given set of traini
     ###  Airline 
     ![Airline](https://user-images.githubusercontent.com/76595524/148056571-68d7e31d-0c80-4ba5-8099-425c4d3faa27.png)
    ###  Source
-   ![Source](https://user-images.githubusercontent.com/76595524/148057318-bc0958a1-a8de-4161-9e86-2d7934d3a79a.png)
+   ![source](https://user-images.githubusercontent.com/76595524/150360619-fdaaadb4-8586-4172-9b7a-4b67828c73f9.jpg)
    ###  Destination
-   ![Destination](https://user-images.githubusercontent.com/76595524/148057156-331a85ae-9f65-481f-8f46-1bfa66c8a860.png)
+   ![dest](https://user-images.githubusercontent.com/76595524/150360597-d93b66aa-be15-4aa7-85a7-cc6ab9a6a330.jpg)
    
 
 - Clustering: 
-        KMeans algorithm is used to create clusters in the preprocessed data. To select optimum number of clusters. 
+        KMeans algorithm is used to find optimum clusters for preprocessed data.  
         ![Cluster](https://user-images.githubusercontent.com/76595524/148057837-4e376515-11c4-4833-a814-5c5f3d48c768.png)
 
 - Find best Madel:
         Depend on Cluster number we find the best model for each cluster. By using 2  algorithms “RandomForestRegressor” and "XGBoost". 
         For each cluster both the hyper tunned algorithms are used.       
-        ![s4](https://user-images.githubusercontent.com/76595524/148635136-66fea425-b690-4087-95c4-2020b7804c87.jpg)
+        ![s4](https://user-images.githubusercontent.com/76595524/149934255-b5b0ddf8-7dcd-450e-a395-c58b320b9052.jpg)
         
    
 - Predition:
@@ -211,19 +211,13 @@ git push
 
 ## Inference demo
 
+- I have deployed this Application in Heroku Cloud Platform Link: https://predictionpriceflight.herokuapp.com/
+
 1. UI for Flight Price Prediction
-![S1](https://user-images.githubusercontent.com/76595524/148633333-de854d00-ad5b-4fe4-95a1-5ca563994f1c.jpg)
+![s1](https://user-images.githubusercontent.com/76595524/149933862-d9fca45f-5e9e-4fbd-bee7-c7458d38f653.jpg)
 
 2. UI for Prediction File Outcome:
-![S2](https://user-images.githubusercontent.com/76595524/148633342-055c7ee4-fef6-407e-b562-a883713bf555.jpg)
+![s2](https://user-images.githubusercontent.com/76595524/149933876-90121044-eb88-453a-ae36-15ef260c65f7.jpg)
 
 3. UI for Custom File Prediction Outcome:
-![S3](https://user-images.githubusercontent.com/76595524/148633347-925b4f88-2c2d-48c9-8cfa-2c9f86886bcb.jpg)
-
-
-## Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25> 
-- Abhishek Saha
-- Souvik Dey
-
-
-    
+![s3](https://user-images.githubusercontent.com/76595524/149933888-42a9033f-885d-4be4-8190-eceb63eaf9a3.jpg)  
