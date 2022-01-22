@@ -211,7 +211,7 @@ git push
 
 ## Inference demo
 
-- I have deployed this Application in Heroku Cloud Platform Link: https://predictionpriceflight.herokuapp.com/
+- I have deployed this Application in Heroku Cloud Platform. URL Link: https://predictionpriceflight.herokuapp.com/
 
 1. UI for Flight Price Prediction
 ![s1](https://user-images.githubusercontent.com/76595524/149933862-d9fca45f-5e9e-4fbd-bee7-c7458d38f653.jpg)
